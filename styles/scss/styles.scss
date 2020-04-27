@@ -1,4 +1,4 @@
-@import "variables", "layout", "components", "mixins", "media-queries";
+@import "variables", "mixins", "layout", "components", "media-queries";
 
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
@@ -16,19 +16,15 @@
 
 
 /*------------------------------------------HTML----*/
-html {
-    height: 100%;
-}
+
 
 
 /*------------------------------------------Body----*/
 body {
-    background-color: #fbda61;
-    background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: $color1;
 }
 
 
 /*------------------------------------Navigation----*/
-.navbar-toggler {
-    border: none;
-}

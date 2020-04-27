@@ -1,0 +1,105 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+
+
+
+*/
+
+/*---------------------------------------Buttons----*/
+.burger-btn {
+  transform: scale(2);
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 98;
+}
+
+.burger-btn-label {
+  display: block;
+  cursor: pointer;
+  z-index: 99;
+
+  &:hover .bar {
+    background: $color6;
+  }
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 7px;
+  background: $white;
+  transition: all 0.2s;
+}
+
+.bar-top {
+  @extend .bar;
+}
+
+.bar-middle {
+  @extend .bar;
+}
+
+.bar-bottom {
+  @extend .bar;
+  margin-bottom: 0;
+}
+
+.burger-btn:checked + .burger-btn-label .bar {
+  background: $color1;
+}
+
+.burger-btn:checked + .burger-btn-label .bar-top {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 27px;
+  width: 30px;
+}
+
+.burger-btn:checked + .burger-btn-label .bar-middle {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 27px;
+  width: 30px;
+}
+
+.burger-btn:checked + .burger-btn-label .bar-bottom {
+  opacity: 0;
+}
+
+.burger-btn:checked + .burger-btn-label:hover .bar {
+  background: $color6;
+}
+
+.burger-btn:checked + .burger-btn-label ~ .navbar-nav {
+  transform: translateX(300px);
+}
+
+/*-----------------------------------------Links----*/
+a {
+  text-decoration: none;
+
+  &:hover {
+      color: $color6;
+  }
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color1;
+}
+
+/*-----------------------------------------Icons----*/
+.nav-icon {
+  width: 25px;
+  height: 25px;
+
+  &:hover {
+    filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+  }
+}
