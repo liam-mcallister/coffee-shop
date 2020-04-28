@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../../fonts/Karla-Regular.ttf);
+  font-family: karla;
+}
+
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
@@ -21,8 +26,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-rows: 60px calc(100vh - 60px) auto;
+      grid-template-rows: 60px calc(100vh - 60px) auto;
       grid-template-areas: "navbar" "hero" "intro";
 }
 
@@ -30,16 +35,16 @@
 .navbar {
   -ms-grid-column: 1;
   grid-column: 1fr;
-  grid-row: auto;
+  grid-row: 60px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: navbar;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,25 +66,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: -300px;
   height: 100vh;
   width: 300px;
-  background: #ffffff;
-  z-index: 97;
+  z-index: 99;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-.nav-item {
-  margin: 2rem 0;
-}
-
-.nav-link {
-  padding: 1rem;
+.nav-item, .nav-link {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 .navbar-buttons {
@@ -101,7 +102,7 @@
   display: flex;
 }
 
-.nav-icon {
+.navbar-icons li {
   margin-left: 1rem;
 }
 
@@ -109,10 +110,23 @@
 .hero {
   -ms-grid-column: 1;
   grid-column: 1fr;
-  grid-row: auto;
+  grid-row: calc(100vh - 60px);
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: hero;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*-----------------------------------------Intro----*/
@@ -134,20 +148,44 @@
 
 */
 /*---------------------------------------Buttons----*/
+/*------------------------------Button----*/
+.btn {
+  border-radius: 3rem;
+  padding: 1rem;
+  background: #c40840;
+  color: #ffffff;
+}
+
+.btn a {
+  color: #ffffff;
+}
+
+.btn:hover {
+  background: #930630;
+  color: #ffffff;
+}
+
+/*-----------------------Burger Button----*/
 .burger-btn {
   -webkit-transform: scale(2);
           transform: scale(2);
   opacity: 0;
   margin: 0;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  top: 22px;
+  left: 37px;
   z-index: 98;
 }
 
 .burger-btn-label {
   display: block;
+  height: 20px;
   cursor: pointer;
-  z-index: 99;
+  position: fixed;
+  top: 20px;
+  left: 34px;
+  z-index: 100;
 }
 
 .burger-btn-label:hover .bar, .burger-btn-label:hover .bar-top, .burger-btn-label:hover .bar-middle, .burger-btn-label:hover .bar-bottom {
@@ -156,9 +194,9 @@
 
 .bar, .bar-top, .bar-middle, .bar-bottom {
   display: block;
-  width: 25px;
+  width: 20px;
   height: 3px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   background: #ffffff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -176,16 +214,16 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   position: absolute;
-  top: 27px;
-  width: 30px;
+  top: 6px;
+  width: 23px;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-middle {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
-  top: 27px;
-  width: 30px;
+  top: 6px;
+  width: 23px;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-bottom {
@@ -204,22 +242,19 @@
 /*-----------------------------------------Links----*/
 a {
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #1A1A1C;
 }
 
 a:hover {
   color: #ff659d;
 }
 
-.nav-link {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #1A1A1C;
-}
-
 /*-----------------------------------------Icons----*/
 .nav-icon {
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
 }
 
 .nav-icon:hover {
@@ -227,6 +262,17 @@ a:hover {
           filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
 }
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+
+
+
+*/
+/*----------------------------------------Height----*/
+/*-----------------------------------------Width----*/
+/*-----------------------------------------Print----*/
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
@@ -244,10 +290,18 @@ a:hover {
 /*------------------------------------------HTML----*/
 /*------------------------------------------Body----*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: karla;
   font-size: 16px;
   background-color: #1A1A1C;
 }
 
 /*------------------------------------Navigation----*/
+.navbar-nav {
+  background: #ffffff;
+}
+
+/*------------------------------------------Hero----*/
+.hero {
+  color: #ffffff;
+}
 /*# sourceMappingURL=styles.css.map */
