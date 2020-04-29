@@ -103,8 +103,12 @@
     }
 }
 
-.intro__signature {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    font-weight: bold;
+/*-----------------------------------------Menu----*/
+.menu {
+  grid-column: 1fr;
+  grid-row: auto;
+  grid-area: menu;
+  @include flex-column-center;
+
+  height: 500px;
 }
