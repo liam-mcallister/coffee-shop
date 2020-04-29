@@ -7,7 +7,7 @@
 
 */
 
-/*-----------------------------------------Grids----*/
+/*------------------------------------------Grid----*/
 @mixin grid-index-template {
   display: grid;
   grid-template-columns: 1fr;
@@ -16,4 +16,13 @@
     "navbar"
     "hero"
     "intro";
+}
+
+/*------------------------------------------Flex----*/
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

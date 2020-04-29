@@ -10,18 +10,33 @@
 /*---------------------------------------Buttons----*/
 /*------------------------------Button----*/
 .btn {
+    display: inline-block;
     border-radius: 3rem;
+    border: 2px solid $color6;
     padding: 1rem;
-    background: $color5;
-    color: $white;
+    background: $color6;
+    color: $color1;
 
     & a {
         color: $white;
     }
 
     &:hover {
-        background: darken($color: $color5, $amount: 10%);
-        color: $white;
+        background: darken($color: $color6, $amount: 10%);
+        color: $color1;
+    }
+}
+
+.btn-clear {
+    @extend .btn;
+    border: 2px solid $white;
+    background: transparent;
+    color: $white;
+
+    &:hover {
+        border: 2px solid $color4;
+        background: $color4;
+        color: $color1;
     }
 }
 
@@ -39,12 +54,15 @@
 
 .burger-btn-label {
     display: block;
-    height: 20px;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
     position: fixed;
     top: 20px;
     left: 34px;
     z-index: 100;
+    border-radius: 3rem;
+    background: $color6;
 
     &:hover .bar {
         background: $color6;
@@ -123,4 +141,13 @@ a {
     &:hover {
         filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
     }
+}
+
+/*-------------------------------------------HR----*/
+hr {
+    height: 5px;
+    margin: 2rem 0;
+    border: none;
+    background: $color6;
+    color: $color6;
 }

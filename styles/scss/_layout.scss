@@ -9,73 +9,102 @@
 
 /*------------------------------------------Body----*/
 .grid-index {
-    @include grid-index-template;
+  @include grid-index-template;
+}
+
+/*-----------------------------------------Inner----*/
+.inner {
+  max-width: 1200px;
+  margin: 0 2rem;
+}
+
+.inner-md {
+    max-width: 800px;
+    margin: 10rem 2rem;
 }
 
 /*----------------------------------------Navbar----*/
 .navbar {
-    grid-column: 1fr;
-    grid-row: 60px;
-    grid-area: navbar;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    padding: 1rem 2rem;
+  grid-column: 1fr;
+  grid-row: 60px;
+  grid-area: navbar;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 1rem 2rem;
 }
 
 .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    left: -300px;
-    height: 100vh;
-    width: 300px;
-    z-index: 99;
-    transition: transform 0.5s ease-in-out;
+  @include flex-column-center;
+  position: fixed;
+  top: 0px;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  z-index: 99;
+  transition: transform 0.5s ease-in-out;
 }
 
 .nav-item {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+
+  &:last-of-type {
+    padding: 0;
+  }
 }
 
 .nav-link {
-    @extend .nav-item;
+  @extend .nav-item;
 }
 
 .navbar-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
 }
 
 .navbar-icons {
-    display: flex;
+  display: flex;
 
-    & li {
-        margin-left: 1rem;
-    }
+  & li {
+    margin-left: 1rem;
+  }
 }
 
 /*------------------------------------------Hero----*/
 .hero {
-    grid-column: 1fr;
-    grid-row: calc(100vh - 60px);
-    grid-area: hero;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  grid-column: 1fr;
+  grid-row: calc(100vh - 60px);
+  grid-area: hero;
+  @include flex-column-center;
 }
 
 /*-----------------------------------------Intro----*/
 .intro {
-    grid-column: 1fr;
-    grid-row: auto;
-    grid-area: intro;
+  grid-column: 1fr;
+  grid-row: auto;
+  grid-area: intro;
+  @include flex-column-center;
+}
+
+.intro__text {
+    display: flex;
+    text-align: right;
+    
+    & p {
+        padding: 0 2rem;
+    }
+
+    & p:last-of-type {
+        text-align: left;
+    }
+}
+
+.intro__signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: bold;
 }
