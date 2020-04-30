@@ -10,145 +10,177 @@
 /*---------------------------------------Buttons----*/
 /*------------------------------Button----*/
 .btn {
-    display: inline-block;
-    border-radius: 3rem;
-    border: 2px solid $color6;
-    padding: 1rem;
-    background: $color6;
+  display: inline-block;
+  border-radius: 3rem;
+  border: 2px solid $color6;
+  padding: 1rem;
+  background: $color6;
+  color: $color1;
+
+  & a {
+    color: $white;
+  }
+
+  &:hover {
+    background: darken($color: $color6, $amount: 10%);
     color: $color1;
-
-    & a {
-        color: $white;
-    }
-
-    &:hover {
-        background: darken($color: $color6, $amount: 10%);
-        color: $color1;
-    }
+  }
 }
 
 .btn-clear {
-    @extend .btn;
-    border: 2px solid $white;
-    background: transparent;
-    color: $white;
+  @extend .btn;
+  border: 2px solid $white;
+  background: transparent;
+  color: $white;
 
-    &:hover {
-        border: 2px solid $color4;
-        background: $color4;
-        color: $color1;
-    }
+  &:hover {
+    border: 2px solid $color4;
+    background: $color4;
+    color: $color1;
+  }
 }
 
 /*-----------------------Burger Button----*/
 .burger-btn {
-    transform: scale(2);
-    opacity: 0;
-    margin: 0;
-    cursor: pointer;
-    position: fixed;
-    top: 24px;
-    left: 41px;
-    z-index: 97;
+  transform: scale(2);
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 24px;
+  left: 41px;
+  z-index: 97;
 }
 
 .burger-btn-label {
-    display: block;
-    height: 23px;
-    width: 23px;
-    cursor: pointer;
-    position: fixed;
-    top: 17px;
-    left: 34px;
-    z-index: 100;
-    border-radius: 3rem;
-    background: $white;
+  display: block;
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+  position: fixed;
+  top: 17px;
+  left: 34px;
+  z-index: 100;
+  border-radius: 3rem;
+  background: $white;
 
-    &:hover {
-        background: $color4;
-    }
+  &:hover {
+    background: $color4;
+  }
 }
 
 .bar {
-    display: block;
-    position: absolute;
-    top: 4.5px;
-    left: 4.5px;
-    width: 14px;
-    height: 2.1px;
-    background: $color1;
-    transition: all 0.2s;
+  display: block;
+  position: absolute;
+  top: 4.5px;
+  left: 4.5px;
+  width: 14px;
+  height: 2.1px;
+  background: $color1;
+  transition: all 0.2s;
 }
 
 .bar-top {
-    @extend .bar;
+  @extend .bar;
 }
 
 .bar-middle {
-    @extend .bar;
-    top: 10.5px;
+  @extend .bar;
+  top: 10.5px;
 }
 
 .bar-bottom {
-    @extend .bar;
-    top: 16px;
+  @extend .bar;
+  top: 16px;
 }
 
 .burger-btn:checked ~ .burger-btn-label {
-    background: $color4;
+  background: $color4;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-top {
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 10.5px;
-    left: 2.5px;
-    width: 18px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10.5px;
+  left: 2.5px;
+  width: 18px;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-middle {
-    transform: rotate(45deg);
-    position: absolute;
-    top: 10.5px;
-    left: 2.5px;
-    width: 18px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10.5px;
+  left: 2.5px;
+  width: 18px;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-bottom {
-    opacity: 0;
+  opacity: 0;
 }
 
 .burger-btn:checked + .burger-btn-label ~ .navbar-nav {
-    transform: translateX(300px);
+  transform: translateX(300px);
 }
 
 /*-----------------------------------------Links----*/
 a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $color1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color1;
 
-    &:hover {
-        color: $color6;
-    }
+  &:hover {
+    color: $color6;
+  }
 }
 
 /*-----------------------------------------Icons----*/
 .nav-icon {
-    width: 23px;
-    height: 23px;
+  width: 23px;
+  height: 23px;
 
-    &:hover {
-        filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
-    }
+  &:hover {
+    filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+  }
 }
 
 /*-------------------------------------------HR----*/
 hr {
-    height: 5px;
-    margin: 2rem 0;
-    border: none;
-    background: $color6;
-    color: $color6;
+  height: 5px;
+  margin: 2rem 0;
+  border: none;
+  background: $color6;
+  color: $color6;
+}
+
+/*-----------------------------------------Cards----*/
+.card {
+  min-width: 50%;
+  max-width: 50%;
+  padding: 1rem;
+  text-align: left;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+
+  & p {
+      margin-bottom: 0.5rem;
+  }
+}
+
+.card__header__dots {
+    flex: 1;
+    height: 17px;
+    border-bottom: 2px dotted $color1;
+}
+
+.card__info {
+  font-size: 0.8rem;
+
+  & p {
+    margin-bottom: 0;
+  }
 }

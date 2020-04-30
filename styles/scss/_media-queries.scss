@@ -48,6 +48,12 @@
       text-align: justify;
     }
   }
+
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+  }
 }
 
 // // Small devices (landscape phones, less than 768px)

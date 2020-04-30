@@ -109,6 +109,9 @@
   grid-row: auto;
   grid-area: menu;
   @include flex-column-center;
+}
 
-  height: 500px;
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
 }
