@@ -114,4 +114,19 @@
 .menu__list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/*---------------------------------------Booking----*/
+.booking {
+  grid-column: 1fr;
+  grid-row: auto;
+  grid-area: booking;
+  @include flex-column-center;
+  padding: 6rem 0;
+  transition: all 0.5s;
+
+  & h2 {
+    margin-top: 1rem;
+  }
 }

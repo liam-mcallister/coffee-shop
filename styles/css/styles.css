@@ -24,7 +24,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 60px calc(100vh - 60px) auto;
       grid-template-rows: 60px calc(100vh - 60px) auto;
-      grid-template-areas: "navbar" "hero" "intro" "menu";
+      grid-template-areas: "navbar" "hero" "intro" "menu" "booking";
 }
 
 /*-----------------------------------------Inner----*/
@@ -211,6 +211,38 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/*---------------------------------------Booking----*/
+.booking {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: booking;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 6rem 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.booking h2 {
+  margin-top: 1rem;
 }
 
 /*----------------------------------------------------
@@ -230,6 +262,8 @@
   padding: 1rem;
   background: #ff659d;
   color: #1A1A1C;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn a, .btn-clear a {
@@ -245,6 +279,8 @@
   border: 2px solid #ffffff;
   background: transparent;
   color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn-clear:hover {
@@ -355,6 +391,11 @@ a:hover {
 .nav-icon:hover {
   -webkit-filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
           filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+}
+
+.icon-lg {
+  height: 70px;
+  width: 70px;
 }
 
 /*-------------------------------------------HR----*/
@@ -472,11 +513,11 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .sub-header {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 15rem;
 }
 
@@ -492,7 +533,7 @@ p {
 
 .signature {
   margin: 3rem;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -519,5 +560,18 @@ nav {
   -webkit-box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
           box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
   background: #7FD1B9;
+}
+
+/*---------------------------------------Booking----*/
+.booking {
+  border: 1rem solid #ffffff;
+  background: #1A1A1C;
+  background: url(/images/bg-dark.png);
+  color: #ffffff;
+}
+
+.booking:hover {
+  border: 1rem solid #ff659d;
+  color: #ff659d;
 }
 /*# sourceMappingURL=styles.css.map */

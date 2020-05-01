@@ -16,6 +16,7 @@
   padding: 1rem;
   background: $color6;
   color: $color1;
+  transition: all 0.5s;
 
   & a {
     color: $white;
@@ -32,6 +33,7 @@
   border: 2px solid $white;
   background: transparent;
   color: $white;
+  transition: all 0.5s;
 
   &:hover {
     border: 2px solid $color4;
@@ -142,6 +144,11 @@ a {
   &:hover {
     filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
   }
+}
+
+.icon-lg {
+  height: 70px;
+  width: 70px;
 }
 
 /*-------------------------------------------HR----*/
