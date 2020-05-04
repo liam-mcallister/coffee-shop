@@ -130,3 +130,19 @@
     margin-top: 1rem;
   }
 }
+
+/*--------------------------------------Features----*/
+.features {
+  grid-column: 1fr;
+  grid-row: auto;
+  grid-area: features;
+  @include flex-column-center;
+  padding: 1rem;
+}
+
+.feature-img {
+  background: url("/images/barrista.jpg") center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}

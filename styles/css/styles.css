@@ -24,7 +24,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 60px calc(100vh - 60px) auto;
       grid-template-rows: 60px calc(100vh - 60px) auto;
-      grid-template-areas: "navbar" "hero" "intro" "menu" "booking";
+      grid-template-areas: "navbar" "hero" "intro" "menu" "booking" "features";
 }
 
 /*-----------------------------------------Inner----*/
@@ -243,6 +243,38 @@
 
 .booking h2 {
   margin-top: 1rem;
+}
+
+/*--------------------------------------Features----*/
+.features {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: features;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.feature-img {
+  background: url("/images/barrista.jpg") center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 500px;
 }
 
 /*----------------------------------------------------
@@ -574,4 +606,6 @@ nav {
   border: 1rem solid #ff659d;
   color: #ff659d;
 }
+
+/*--------------------------------------Features----*/
 /*# sourceMappingURL=styles.css.map */
