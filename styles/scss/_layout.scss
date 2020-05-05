@@ -19,8 +19,8 @@
 }
 
 .inner-md {
-    max-width: 800px;
-    margin: 10rem 2rem;
+  max-width: 800px;
+  margin: 10rem 2rem;
 }
 
 /*----------------------------------------Navbar----*/
@@ -91,16 +91,16 @@
 }
 
 .intro__text {
-    display: flex;
-    text-align: right;
-    
-    & p {
-        padding: 0 2rem;
-    }
+  display: flex;
+  text-align: right;
 
-    & p:last-of-type {
-        text-align: left;
-    }
+  & p {
+    padding: 0 2rem;
+  }
+
+  & p:last-of-type {
+    text-align: left;
+  }
 }
 
 /*-----------------------------------------Menu----*/
@@ -137,12 +137,39 @@
   grid-row: auto;
   grid-area: features;
   @include flex-column-center;
-  padding: 1rem;
+  padding: 10rem 4rem;
 }
 
-.feature-img {
-  background: url("/images/barrista.jpg") center center no-repeat;
-  background-size: cover;
-  height: 500px;
-  width: 500px;
+.features__top {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
+
+.features__middle {
+  @extend .features__top;
+  justify-content: flex-start;
+}
+
+.features__bottom {
+  @extend .features__top;
+}
+
+.img {
+  max-width: 900px;
+  max-height: 700px;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+  }
+}
+
+// .feature-img {
+//   background: url("/images/barrista.jpg") center center no-repeat;
+//   background-size: cover;
+//   max-width: 900px;
+//   height: 700px;
+// }

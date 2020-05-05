@@ -267,14 +267,35 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 10rem 4rem;
 }
 
-.feature-img {
-  background: url("/images/barrista.jpg") center center no-repeat;
-  background-size: cover;
-  height: 500px;
-  width: 500px;
+.features__top, .features__middle, .features__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.features__middle {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.img {
+  max-width: 900px;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
 }
 
 /*----------------------------------------------------
@@ -475,6 +496,34 @@ hr {
 
 .card__info p {
   margin-bottom: 0;
+}
+
+.features-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  right: 450px;
+  top: 170px;
+  padding: 1rem;
+  background: red;
+}
+
+.features-card p {
+  margin: 0;
 }
 
 /*----------------------------------------------------
