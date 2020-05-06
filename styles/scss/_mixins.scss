@@ -9,23 +9,30 @@
 
 /*------------------------------------------Grid----*/
 @mixin grid-index-template {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 60px calc(100vh - 60px) auto;
-  grid-template-areas:
-    "navbar"
-    "hero"
-    "intro"
-    "menu"
-    "booking"
-    "features";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px calc(100vh - 60px) auto;
+    grid-template-areas:
+        "navbar"
+        "hero"
+        "intro"
+        "menu"
+        "booking"
+        "features"
+        "gallery";
+}
+
+@mixin grid-3col-template {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
 
 /*------------------------------------------Flex----*/
 @mixin flex-column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
