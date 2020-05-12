@@ -95,6 +95,10 @@
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
 // // Large devices (desktops, less than 1200px)
