@@ -24,7 +24,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 60px calc(100vh - 60px) auto;
       grid-template-rows: 60px calc(100vh - 60px) auto;
-      grid-template-areas: "navbar" "hero" "intro" "menu" "booking" "features" "gallery";
+      grid-template-areas: "navbar" "hero" "intro" "menu" "booking" "features" "gallery" "thanks";
 }
 
 /*-----------------------------------------Inner----*/
@@ -390,6 +390,50 @@
   background: black;
   opacity: 0;
   z-index: 99;
+}
+
+/*----------------------------------------Thanks----*/
+.thanks {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: thanks;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 10rem 0;
+}
+
+.thanks__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanks__img {
+  width: 50%;
+}
+
+.thanks__text {
+  width: 50%;
+  padding: 2rem;
+  text-align: left;
 }
 
 /*----------------------------------------------------
@@ -762,7 +806,7 @@ p {
 }
 
 .signature {
-  margin: 3rem;
+  margin-top: 3rem;
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
   font-weight: bold;
