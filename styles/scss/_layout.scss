@@ -15,7 +15,7 @@
 /*-----------------------------------------Inner----*/
 .inner {
   max-width: 1200px;
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 
 .inner-md {
@@ -80,6 +80,7 @@
   grid-row: calc(100vh - 60px);
   grid-area: hero;
   @include flex-column-center;
+  padding: 0 2rem;
 }
 
 /*-----------------------------------------Intro----*/
@@ -137,7 +138,7 @@
   grid-row: auto;
   grid-area: features;
   @include flex-column-center;
-  margin: 10rem 0;
+  padding: 10rem 2rem;
 }
 
 .features__top {
@@ -304,9 +305,7 @@ footer {
   padding: 0 1rem;
 }
 
-.footer__grid__col5 {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
+.footer__bottom {
   display: flex;
   justify-content: center;
   align-items: center;

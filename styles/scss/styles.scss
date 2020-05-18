@@ -109,6 +109,10 @@ footer {
   color: $white;
 }
 
-.footer__grid__col5 {
+.footer__bottom {
     background: rgba(0, 0, 0, 0.603) ;
+
+    & span {
+      color: $color6;
+    }
 }
