@@ -24,7 +24,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 60px calc(100vh - 60px) auto;
       grid-template-rows: 60px calc(100vh - 60px) auto;
-      grid-template-areas: "navbar" "hero" "intro" "menu" "booking" "features" "gallery" "thanks";
+      grid-template-areas: "navbar" "hero" "intro" "menu" "booking" "features" "gallery" "thanks" "footer";
 }
 
 /*-----------------------------------------Inner----*/
@@ -414,7 +414,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 10rem 0;
 }
 
 .thanks__info {
@@ -434,6 +433,96 @@
   width: 50%;
   padding: 2rem;
   text-align: left;
+}
+
+/*----------------------------------------Footer----*/
+footer {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin-top: 10rem;
+}
+
+.footer__grid__col1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 1rem;
+}
+
+.footer__grid__col2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 1rem;
+}
+
+.footer__grid__col3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 1rem;
+}
+
+.footer__grid__col4 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 1rem;
+}
+
+.footer__grid__col5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+
+.footer__grid__col5 p {
+  margin: 0;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*----------------------------------------------------
@@ -573,6 +662,11 @@ a:hover {
   color: #ff659d;
 }
 
+footer a {
+  display: inline-block;
+  color: #7FD1B9;
+}
+
 /*-----------------------------------------Icons----*/
 .nav-icon {
   width: 23px;
@@ -671,6 +765,18 @@ hr {
 */
 /*----------------------------------------Height----*/
 /*-----------------------------------------Width----*/
+@media (min-width: 576px) {
+  .thanks__img {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .thanks__img {
+    padding: 0;
+  }
+}
+
 @media (max-width: 575px) {
   .inner {
     margin: 0 1rem;
@@ -692,6 +798,26 @@ hr {
     min-width: 100%;
     max-width: 100%;
     padding: 1rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .thanks__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thanks__img {
+    width: 100%;
+  }
+  .thanks__text {
+    width: 100%;
+    padding-top: 5rem;
+    text-align: center;
   }
 }
 
@@ -778,7 +904,7 @@ body {
 }
 
 /*--------------------------------------Headings----*/
-h1, h2 {
+h1, h2, h3 {
   font-family: "Oswald", sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
@@ -788,6 +914,10 @@ h1, h2 {
 
 h2 {
   font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .sub-header {
@@ -850,4 +980,13 @@ nav {
 }
 
 /*--------------------------------------Features----*/
+/*----------------------------------------Footer----*/
+footer {
+  background: url(/images/bg-dark.png);
+  color: #ffffff;
+}
+
+.footer__grid__col5 {
+  background: rgba(0, 0, 0, 0.603);
+}
 /*# sourceMappingURL=styles.css.map */

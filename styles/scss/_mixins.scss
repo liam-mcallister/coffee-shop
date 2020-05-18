@@ -20,13 +20,20 @@
         "booking"
         "features"
         "gallery"
-        "thanks";
+        "thanks"
+        "footer";
 }
 
 @mixin grid-3col-template {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+}
+
+@mixin grid-4col-template {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
 }
 
 /*------------------------------------------Flex----*/

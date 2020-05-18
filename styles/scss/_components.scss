@@ -136,6 +136,12 @@ a {
   }
 }
 
+footer a {
+  display: inline-block;
+  //margin-bottom: 1rem;
+  color: $color4;
+}
+
 /*-----------------------------------------Icons----*/
 .nav-icon {
   width: 23px;
