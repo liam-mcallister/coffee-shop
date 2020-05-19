@@ -619,9 +619,9 @@ p {
   display: block;
   position: absolute;
   top: 8px;
-  left: 6.5px;
+  left: 7px;
   width: 16px;
-  height: 2.1px;
+  height: 2.5px;
   border-radius: 1rem;
   background: #1A1A1C;
   -webkit-transition: all 0.2s;
@@ -629,7 +629,7 @@ p {
 }
 
 .bar-middle {
-  top: 14px;
+  top: 14.2px;
 }
 
 .bar-bottom {
@@ -689,8 +689,6 @@ a:hover {
 .nav-icon {
   height: 30px;
   width: 30px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .nav-icon:hover {

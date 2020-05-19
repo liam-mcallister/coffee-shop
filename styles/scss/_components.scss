@@ -125,9 +125,9 @@ p {
   display: block;
   position: absolute;
   top: 8px;
-  left: 6.5px;
+  left: 7px;
   width: 16px;
-  height: 2.1px;
+  height: 2.5px;
   border-radius: 1rem;
   background: $color1;
   transition: all 0.2s;
@@ -139,7 +139,7 @@ p {
 
 .bar-middle {
   @extend .bar;
-  top: 14px;
+  top: 14.2px;
 }
 
 .bar-bottom {
@@ -197,7 +197,6 @@ a {
 .nav-icon {
   height: 30px;
   width: 30px;
-  transition: all 0.5s;
 
   &:hover {
     filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
