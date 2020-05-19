@@ -9,25 +9,26 @@
 
 /*------------------------------------------Body----*/
 .grid-index {
-  @include grid-index-template;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px calc(100vh - 60px) auto;
 }
 
 /*-----------------------------------------Inner----*/
-.inner {
+.inner-lg {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .inner-md {
+  @extend .inner-lg;
   max-width: 800px;
-  margin: 10rem 2rem;
 }
 
 /*----------------------------------------Navbar----*/
 .navbar {
   grid-column: 1fr;
   grid-row: 60px;
-  grid-area: navbar;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -51,6 +52,7 @@
   padding: 0.5rem;
 
   &:last-of-type {
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -77,18 +79,17 @@
 /*------------------------------------------Hero----*/
 .hero {
   grid-column: 1fr;
-  grid-row: calc(100vh - 60px);
-  grid-area: hero;
+  grid-row: auto;
   @include flex-column-center;
-  padding: 0 2rem;
+  padding: 6rem 2rem;
 }
 
 /*-----------------------------------------Intro----*/
 .intro {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: intro;
   @include flex-column-center;
+  padding: 6rem 2rem;
 }
 
 .intro__text {
@@ -108,8 +109,8 @@
 .menu {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: menu;
   @include flex-column-center;
+  padding: 6rem 2rem;
 }
 
 .menu__list {
@@ -122,7 +123,6 @@
 .booking {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: booking;
   @include flex-column-center;
   padding: 6rem 0;
   transition: all 0.5s;
@@ -136,9 +136,8 @@
 .features {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: features;
   @include flex-column-center;
-  padding: 10rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .features__top {
@@ -190,7 +189,6 @@
 .gallery {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: gallery;
 }
 
 .gallery__grid {
@@ -250,8 +248,8 @@
 .thanks {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: thanks;
   @include flex-column-center;
+  padding: 6rem 2rem;
 }
 
 .thanks__info {
@@ -265,44 +263,40 @@
 
 .thanks__text {
   width: 50%;
-  padding: 2rem;
   text-align: left;
+  padding-left: 2rem;
 }
 
 /*----------------------------------------Footer----*/
 footer {
   grid-column: 1fr;
   grid-row: auto;
-  grid-area: footer;
 }
 
 .footer__grid {
   @include grid-4col-template;
-  margin-top: 10rem;
+  grid-gap: 0 1rem;
+  padding: 6rem 2rem;
 }
 
 .footer__grid__col1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  padding: 0 1rem;
 }
 
 .footer__grid__col2 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  padding: 0 1rem;
 }
 
 .footer__grid__col3 {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
-  padding: 0 1rem;
 }
 
 .footer__grid__col4 {
   grid-column: 4 / 5;
   grid-row: 1 / 2;
-  padding: 0 1rem;
 }
 
 .footer__bottom {
@@ -310,13 +304,12 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  margin-top: 5rem;
 
   & p {
-      margin: 0;
+    margin: 0;
   }
 }
 
 .footer-icons {
-    display: flex;
+  display: flex;
 }

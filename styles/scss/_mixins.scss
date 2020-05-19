@@ -8,21 +8,7 @@
 */
 
 /*------------------------------------------Grid----*/
-@mixin grid-index-template {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px calc(100vh - 60px) auto;
-    grid-template-areas:
-        "navbar"
-        "hero"
-        "intro"
-        "menu"
-        "booking"
-        "features"
-        "gallery"
-        "thanks"
-        "footer";
-}
+
 
 @mixin grid-3col-template {
     display: grid;

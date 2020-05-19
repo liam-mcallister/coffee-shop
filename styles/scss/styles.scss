@@ -24,47 +24,6 @@ body {
   background-color: $white;
 }
 
-/*--------------------------------------Headings----*/
-h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  @extend h1;
-  font-size: 2.5rem;
-}
-
-h3 {
-    @extend h1;
-    font-size: 1.5rem;
-  }
-
-.sub-header {
-  font-family: "Great Vibes", cursive;
-  font-size: 15rem;
-}
-
-.header-pink {
-  color: $color6;
-}
-
-/*------------------------------------Paragraphs----*/
-p {
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.signature {
-  margin-top: 3rem;
-  font-family: "Great Vibes", cursive;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 /*------------------------------------Navigation----*/
 nav {
   background: $color1;
