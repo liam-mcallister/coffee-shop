@@ -42,7 +42,6 @@ h3 {
 /*------------------------------------Paragraphs----*/
 p {
   line-height: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .signature {
@@ -215,6 +214,14 @@ hr {
   border: none;
   background: $color6;
   color: $color6;
+}
+
+.hr-footer {
+  height: 1px;
+  margin: 2rem 0;
+  border: none;
+  background: $white;
+  color: $white;
 }
 
 /*-----------------------------------------Cards----*/
