@@ -317,6 +317,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 10px;
   margin: 0 10px;
 }
@@ -429,7 +431,7 @@ footer {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  grid-gap: 0 1rem;
+  grid-gap: 0 2rem;
   padding: 6rem 2rem;
 }
 
@@ -469,6 +471,28 @@ footer {
   grid-row: 1 / 2;
 }
 
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footer-icons a {
+  margin-right: 1rem;
+}
+
+.instagram__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 10px;
+  margin-bottom: 2rem;
+}
+
 .footer__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,12 +508,6 @@ footer {
 
 .footer__bottom p {
   margin: 0;
-}
-
-.footer-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /*----------------------------------------------------
@@ -671,6 +689,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
   color: #1A1A1C;
 }
 
@@ -678,19 +697,37 @@ a:hover {
   color: #ff659d;
 }
 
-.footer-link {
-  display: inline-block;
-  margin-bottom: 2rem;
+footer a {
   color: #7FD1B9;
 }
 
+.footer-link {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.footer-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-blog-link {
+  text-transform: none;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.footer-blog-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 /*-----------------------------------------Icons----*/
-.nav-icon {
+.icon {
   height: 30px;
   width: 30px;
 }
 
-.nav-icon:hover {
+.icon:hover {
   -webkit-filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
           filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
 }
@@ -870,7 +907,7 @@ hr {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[2];
         grid-template-rows: repeat(2, auto);
-    grid-gap: 1rem;
+    grid-gap: 6rem;
   }
   .footer__grid__col1 {
     -ms-grid-column: 1;

@@ -194,6 +194,7 @@
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
   grid-gap: 10px;
   margin: 0 10px;
 }
@@ -275,7 +276,7 @@ footer {
 
 .footer__grid {
   @include grid-4col-template;
-  grid-gap: 0 1rem;
+  grid-gap: 0 2rem;
   padding: 6rem 2rem;
 }
 
@@ -299,6 +300,23 @@ footer {
   grid-row: 1 / 2;
 }
 
+.footer-icons {
+  display: flex;
+  margin-top: 2rem;
+
+  & a {
+    margin-right: 1rem;
+  }
+}
+
+.instagram__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  margin-bottom: 2rem;
+}
+
 .footer__bottom {
   display: flex;
   justify-content: center;
@@ -308,8 +326,4 @@ footer {
   & p {
     margin: 0;
   }
-}
-
-.footer-icons {
-  display: flex;
 }

@@ -179,6 +179,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
   color: $color1;
 
   &:hover {
@@ -186,14 +187,32 @@ a {
   }
 }
 
-.footer-link {
-  display: inline-block;
-  margin-bottom: 2rem;
+footer a {
   color: $color4;
 }
 
+.footer-link {
+  display: block;
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.footer-blog-link {
+  text-transform: none;
+  font-weight: normal;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
 /*-----------------------------------------Icons----*/
-.nav-icon {
+.icon {
   height: 30px;
   width: 30px;
 
