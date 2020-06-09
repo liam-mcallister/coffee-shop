@@ -8,6 +8,7 @@
 */
 /*------------------------------------------Grid----*/
 /*------------------------------------------Flex----*/
+/*------------------------------------------Misc----*/
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
@@ -24,6 +25,51 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 60px calc(100vh - 60px) auto;
       grid-template-rows: 60px calc(100vh - 60px) auto;
+}
+
+.grid-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 400px auto;
+      grid-template-rows: 60px 400px auto;
+}
+
+.grid-contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 400px auto;
+      grid-template-rows: 60px 400px auto;
+}
+
+.grid-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 400px auto;
+      grid-template-rows: 60px 400px auto;
+}
+
+.grid-booking {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 400px auto;
+      grid-template-rows: 60px 400px auto;
+}
+
+.grid-loyalty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 400px auto;
+      grid-template-rows: 60px 400px auto;
 }
 
 /*-----------------------------------------Inner----*/
@@ -115,6 +161,7 @@
   margin-left: 1rem;
 }
 
+/*-----------------------------------------------Home Page----*/
 /*------------------------------------------Hero----*/
 .hero {
   -ms-grid-column: 1;
@@ -135,6 +182,10 @@
           align-items: center;
   text-align: center;
   padding: 6rem 2rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
 }
 
 /*-----------------------------------------Intro----*/
@@ -167,7 +218,8 @@
 }
 
 .intro__text p {
-  padding: 0 2rem;
+  margin: 0 0 2rem 0;
+  padding: 0 1rem;
 }
 
 .intro__text p:last-of-type {
@@ -417,6 +469,234 @@
   padding-left: 2rem;
 }
 
+/*-----------------------------------------------Menu Page----*/
+/*----------------------------------------Hero 2----*/
+.hero--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/*----------------------------------------Menu----*/
+.menu--white h2 {
+  margin-top: 3rem;
+}
+
+.menu--white h2:first-child {
+  margin-top: 2rem;
+}
+
+/*--------------------------------------------Contact Page----*/
+/*----------------------------------------Contact Hero----*/
+.hero--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/*----------------------------------------Contact Form----*/
+.contact {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+/*----------------------------------------Contact Info----*/
+.contact-info {
+  margin: 0 2rem 6rem 2rem;
+}
+
+.contact-info__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 550px;
+      grid-template-rows: 550px;
+  grid-gap: 2rem;
+}
+
+.contact-info__location {
+  grid-column: span 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-address {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.contact-map {
+  width: 50%;
+}
+
+.contact-info__hours {
+  grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/*--------------------------------------------About Page----*/
+/*----------------------------------------About Hero----*/
+.hero-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.team {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: auto;
+  padding: 6rem 0;
+}
+
+.team__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.about-video {
+  margin: 0 2rem 6rem 2rem;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------Booking Page----*/
+/*----------------------------------------Booking Hero----*/
+.hero-booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.book-container {
+  margin: 6rem 2rem;
+}
+
+.book {
+  padding: 6rem 4rem;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  border: 4px solid #ff659d;
+  background: #ffffff;
+}
+
+/*----------------------------------Loyalty Card----*/
+.card-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 /*----------------------------------------Footer----*/
 footer {
   -ms-grid-column: 1;
@@ -429,8 +709,8 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 0 2rem;
   padding: 6rem 2rem;
 }
@@ -482,6 +762,10 @@ footer {
   margin-right: 1rem;
 }
 
+.twitter-container {
+  margin-bottom: 2rem;
+}
+
 .instagram__grid {
   display: -ms-grid;
   display: grid;
@@ -524,7 +808,7 @@ h1, h2, h3 {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -544,17 +828,13 @@ h3 {
   color: #ff659d;
 }
 
-.footer-header {
-  margin-bottom: 3rem;
-}
-
 /*------------------------------------Paragraphs----*/
 p {
   line-height: 1.5rem;
 }
 
 .signature {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
   font-weight: bold;
@@ -571,6 +851,7 @@ p {
   border-radius: 3rem;
   border: 2px solid #ff659d;
   padding: 1rem;
+  cursor: pointer;
   background: #ff659d;
   color: #1A1A1C;
   -webkit-transition: all 0.5s;
@@ -739,8 +1020,9 @@ footer a {
 
 /*-------------------------------------------HR----*/
 hr {
-  height: 5px;
-  margin: 2rem 0;
+  height: 3px;
+  width: 10rem;
+  margin: 2rem auto;
   border: none;
   background: #ff659d;
   color: #ff659d;
@@ -758,8 +1040,12 @@ hr {
 .card {
   min-width: 50%;
   max-width: 50%;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   text-align: left;
+}
+
+.card:last-of-type {
+  padding: 0 1rem 0 1rem;
 }
 
 .card__header {
@@ -808,13 +1094,75 @@ hr {
           align-items: center;
   text-align: center;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
   -webkit-box-shadow: inset 0 0 0 10px #7FD1B9;
           box-shadow: inset 0 0 0 10px #7FD1B9;
 }
 
-.features-card p {
-  margin: 0;
+/*-----------------------------------------Forms----*/
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-input {
+  width: 47.5%;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.form-input:focus {
+  border: 1px solid #ff659d;
+  background: #ffffff;
+}
+
+.form-input:hover {
+  background: #ffffff;
+}
+
+.form-input--100 {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+textarea:focus {
+  border: 1px solid #ff659d;
+  background: #ffffff;
+}
+
+textarea:hover {
+  background: #ffffff;
 }
 
 /*----------------------------------------------------
@@ -902,6 +1250,27 @@ hr {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .contact-info__grid {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 550px 550px;
+        grid-template-rows: 550px 550px;
+  }
+  .contact-info__location {
+    grid-column: span 12;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-info__hours {
+    grid-column: span 12;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
   .footer__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -962,6 +1331,52 @@ hr {
     text-align: center;
     padding-left: 0;
   }
+  .menu__list {
+    padding: 0 4rem;
+  }
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .contact {
+    padding: 6rem 1rem;
+  }
+  .contact-info {
+    margin: 0 1rem 6rem 1rem;
+  }
+  .contact-info__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-address {
+    width: 100%;
+    height: 300px;
+  }
+  .contact-map {
+    width: 100%;
+    height: 300px;
+  }
+  .contact-info__hours {
+    width: 100%;
+    height: 300px;
+  }
+  .about-video {
+    margin: 0 1rem 6rem 1rem;
+  }
 }
 
 @media (max-width: 575px) {
@@ -969,10 +1384,10 @@ hr {
     font-size: 3rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .intro__text {
     display: block;
@@ -984,10 +1399,37 @@ hr {
   .intro__text p:last-of-type {
     text-align: justify;
   }
-  .card {
-    min-width: 100%;
-    max-width: 100%;
-    padding: 1rem 0;
+  .input-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .book-container {
+    margin: 6rem 1rem;
+  }
+  .book {
+    padding: 6rem 1rem;
+  }
+  .menu {
+    padding: 6rem 1rem;
+  }
+  .menu__list {
+    padding: 0;
+  }
+  .team__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
   .footer__grid {
     -ms-grid-columns: 1fr;
@@ -1039,7 +1481,9 @@ hr {
 
 */
 /*-------------------------------------Universal----*/
-* {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1054,7 +1498,7 @@ body {
 }
 
 /*------------------------------------Navigation----*/
-nav {
+.navbar {
   background: #1A1A1C;
 }
 
@@ -1071,13 +1515,31 @@ nav {
 }
 
 /*------------------------------------------Menu----*/
+.hero--menu {
+  background: url(/images/coffee3.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: #ffffff;
+}
+
 .menu {
   -webkit-box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
           box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
   background: #7FD1B9;
 }
 
+.menu--white {
+  background: #ffffff;
+}
+
 /*---------------------------------------Booking----*/
+.hero-booking {
+  background: url(/images/barrista2.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: #ffffff;
+}
+
 .booking {
   border: 1rem solid #ffffff;
   background: #1A1A1C;
@@ -1090,7 +1552,47 @@ nav {
   color: #ff659d;
 }
 
-/*--------------------------------------Features----*/
+/*---------------------------------------Contact----*/
+.hero--contact {
+  background: url(/images/cafe.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: #ffffff;
+}
+
+.contact-address {
+  background: darkcyan;
+}
+
+.contact-map {
+  background: goldenrod;
+}
+
+.contact-info__hours {
+  background: url(/images/bg-dark.png);
+  color: #ffffff;
+}
+
+/*-----------------------------------------About----*/
+.hero-about {
+  background: url(/images/cafe2.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: #ffffff;
+}
+
+.about {
+  background: #7FD1B9;
+}
+
+/*----------------------------------Loyalty Card----*/
+.card-hero {
+  background: url(/images/cafe2.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: #ffffff;
+}
+
 /*----------------------------------------Footer----*/
 footer {
   background: url(/images/bg-dark.png);

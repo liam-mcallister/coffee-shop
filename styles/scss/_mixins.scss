@@ -8,18 +8,10 @@
 */
 
 /*------------------------------------------Grid----*/
-
-
-@mixin grid-3col-template {
+@mixin grid-template($temp-cols, $temp-rows) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-}
-
-@mixin grid-4col-template {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-columns: $temp-cols;
+    grid-template-rows: $temp-rows;
 }
 
 /*------------------------------------------Flex----*/
@@ -29,4 +21,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/*------------------------------------------Misc----*/
+@mixin page-hero($bg-image) {
+    background: $bg-image;
+    background-size: cover;
+    text-shadow: 6px 2px 2px black;
+    color: $white;
 }

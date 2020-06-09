@@ -13,7 +13,7 @@ h1 {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -35,17 +35,13 @@ h3 {
   color: $color6;
 }
 
-.footer-header {
-  margin-bottom: 3rem;
-}
-
 /*------------------------------------Paragraphs----*/
 p {
   line-height: 1.5rem;
 }
 
 .signature {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
   font-weight: bold;
@@ -62,6 +58,7 @@ p {
   border-radius: 3rem;
   border: 2px solid $color6;
   padding: 1rem;
+  cursor: pointer;
   background: $color6;
   color: $color1;
   transition: all 0.5s;
@@ -228,8 +225,9 @@ footer a {
 
 /*-------------------------------------------HR----*/
 hr {
-  height: 5px;
-  margin: 2rem 0;
+  height: 3px;
+  width: 10rem;
+  margin: 2rem auto;
   border: none;
   background: $color6;
   color: $color6;
@@ -247,8 +245,12 @@ hr {
 .card {
   min-width: 50%;
   max-width: 50%;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   text-align: left;
+
+  &:last-of-type {
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 .card__header {
@@ -278,10 +280,61 @@ hr {
 .features-card {
   @include flex-column-center;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: inset 0 0 0 10px $color4;
+}
 
-  & p {
-    margin: 0;
+/*-----------------------------------------Forms----*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input {
+  width: 47.5%;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+  transition: all 0.5s ease-in;
+
+  &:focus {
+    border: 1px solid $color6;
+    background: $white;
+  }
+
+  &:hover {
+    background: $white;
+  }
+}
+
+.form-input--100 {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+  transition: all 0.5s ease-in;
+
+  &:focus {
+    border: 1px solid $color6;
+    background: $white;
+  }
+
+  &:hover {
+    background: $white;
   }
 }
