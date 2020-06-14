@@ -218,27 +218,42 @@ footer a {
   }
 }
 
+.icon-md {
+  height: 50px;
+  width: 50px;
+}
+
 .icon-lg {
   height: 70px;
   width: 70px;
 }
 
+.feature-icon {
+  margin-bottom: 1rem;
+}
+
 /*-------------------------------------------HR----*/
-hr {
+.hr-md {
   height: 3px;
-  width: 10rem;
-  margin: 2rem auto;
+  width: 15rem;
+  margin: 2rem auto 0.5rem auto;
   border: none;
   background: $color6;
   color: $color6;
 }
 
-.hr-footer {
-  height: 1px;
-  margin: 2rem 0;
-  border: none;
-  background: $white;
-  color: $white;
+.hr-sm {
+  @extend .hr-md;
+  width: 10rem;
+  margin: 0 auto 2rem auto;
+}
+
+.hr-md-left {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.hr-sm-left {
+  margin: 0 0 2rem 0;
 }
 
 /*-----------------------------------------Cards----*/
@@ -303,14 +318,15 @@ form {
   border: 1px solid #cacaca;
   border-radius: 0.3rem;
   background: #f7f7f7;
-  transition: all 0.5s ease-in;
 
   &:focus {
-    border: 1px solid $color6;
+    border: 1px solid $color1;
+    transition: all 0.5s ease-in;
     background: $white;
   }
 
   &:hover {
+    transition: all 0.5s ease-in;
     background: $white;
   }
 }
@@ -330,7 +346,7 @@ textarea {
   transition: all 0.5s ease-in;
 
   &:focus {
-    border: 1px solid $color6;
+    border: 1px solid $color1;
     background: $white;
   }
 

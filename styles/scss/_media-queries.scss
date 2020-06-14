@@ -77,10 +77,6 @@
         grid-row: 1 / 2;
     }
 
-    .gallery__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .contact-info__grid {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 550px 550px;
@@ -144,6 +140,10 @@
 
     .menu__list {
         padding: 0 4rem;
+    }
+
+    .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
@@ -216,6 +216,10 @@
         }
     }
 
+    .features {
+        padding: 6rem 1rem;
+    }
+
     .input-flex {
         display: flex;
         flex-direction: column;
@@ -241,7 +245,16 @@
         padding: 0;
     }
 
-    .team__grid {
+    .contact-info {
+        margin: 0 0 6rem 0;
+    }
+
+    .team__grid__one {
+        @include grid-template(1fr, auto);
+        margin-bottom: 2rem;
+    }
+
+    .team__grid__two {
         @include grid-template(repeat(2, 1fr), auto);
     }
 

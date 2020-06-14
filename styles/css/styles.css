@@ -382,14 +382,19 @@
 }
 
 .gallery__item:hover .gallery-img {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .gallery__item:hover .gallery-zoom {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 1;
+}
+
+.gallery__item:hover .gallery-caption {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .gallery__item::before {
@@ -405,11 +410,9 @@
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 95;
+  z-index: -1;
 }
 
 .gallery-zoom {
@@ -425,7 +428,34 @@
   border-radius: 5rem;
   background: black;
   opacity: 0;
-  z-index: 99;
+  z-index: 1;
+}
+
+.gallery-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+  background: rgba(27, 27, 27, 0.692);
+  color: #ffffff;
 }
 
 /*----------------------------------------Thanks----*/
@@ -565,6 +595,7 @@
 
 .contact-map {
   width: 50%;
+  height: 100%;
 }
 
 .contact-info__hours {
@@ -617,7 +648,27 @@
   padding: 6rem 0;
 }
 
-.team__grid {
+.team__header {
+  text-align: center;
+}
+
+.owner-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__grid__one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin-bottom: 2rem;
+}
+
+.team__grid__two {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -628,6 +679,7 @@
 
 .about-video {
   margin: 0 2rem 6rem 2rem;
+  text-align: center;
 }
 
 .embed-container {
@@ -679,7 +731,7 @@
   background: #ffffff;
 }
 
-/*----------------------------------Loyalty Card----*/
+/*--------------------------------------------Loyalty Card----*/
 .card-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,6 +747,27 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+/*------------------------------------------Error 404 Page----*/
+.error-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
 }
 
 /*----------------------------------------Footer----*/
@@ -1013,27 +1086,41 @@ footer a {
           filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
 }
 
+.icon-md {
+  height: 50px;
+  width: 50px;
+}
+
 .icon-lg {
   height: 70px;
   width: 70px;
 }
 
+.feature-icon {
+  margin-bottom: 1rem;
+}
+
 /*-------------------------------------------HR----*/
-hr {
+.hr-md, .hr-sm {
   height: 3px;
-  width: 10rem;
-  margin: 2rem auto;
+  width: 15rem;
+  margin: 2rem auto 0.5rem auto;
   border: none;
   background: #ff659d;
   color: #ff659d;
 }
 
-.hr-footer {
-  height: 1px;
-  margin: 2rem 0;
-  border: none;
-  background: #ffffff;
-  color: #ffffff;
+.hr-sm {
+  width: 10rem;
+  margin: 0 auto 2rem auto;
+}
+
+.hr-md-left {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.hr-sm-left {
+  margin: 0 0 2rem 0;
 }
 
 /*-----------------------------------------Cards----*/
@@ -1127,16 +1214,18 @@ form {
   border: 1px solid #cacaca;
   border-radius: 0.3rem;
   background: #f7f7f7;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
 }
 
 .form-input:focus {
-  border: 1px solid #ff659d;
+  border: 1px solid #1A1A1C;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   background: #ffffff;
 }
 
 .form-input:hover {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   background: #ffffff;
 }
 
@@ -1157,7 +1246,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 1px solid #ff659d;
+  border: 1px solid #1A1A1C;
   background: #ffffff;
 }
 
@@ -1246,10 +1335,6 @@ textarea:hover {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
-  .gallery__grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
   .contact-info__grid {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
@@ -1334,6 +1419,10 @@ textarea:hover {
   .menu__list {
     padding: 0 4rem;
   }
+  .gallery__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
   .card {
     min-width: 100%;
     max-width: 100%;
@@ -1399,6 +1488,9 @@ textarea:hover {
   .intro__text p:last-of-type {
     text-align: justify;
   }
+  .features {
+    padding: 6rem 1rem;
+  }
   .input-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1423,7 +1515,19 @@ textarea:hover {
   .menu__list {
     padding: 0;
   }
-  .team__grid {
+  .contact-info {
+    margin: 0 0 6rem 0;
+  }
+  .team__grid__one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin-bottom: 2rem;
+  }
+  .team__grid__two {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -1564,10 +1668,6 @@ body {
   background: darkcyan;
 }
 
-.contact-map {
-  background: goldenrod;
-}
-
 .contact-info__hours {
   background: url(/images/bg-dark.png);
   color: #ffffff;
@@ -1590,6 +1690,12 @@ body {
   background: url(/images/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
+  color: #ffffff;
+}
+
+/*-------------------------------------Error 404----*/
+.error-404 {
+  background: url(/images/bg-dark.png);
   color: #ffffff;
 }
 

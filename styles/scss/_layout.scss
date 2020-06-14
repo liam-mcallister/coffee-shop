@@ -228,12 +228,16 @@
     position: relative;
 
     &:hover .gallery-img {
-        filter: grayscale(0%);
+        filter: grayscale(100%);
     }
 
     &:hover .gallery-zoom {
         transform: translate(-50%, -50%);
         opacity: 1;
+    }
+
+    &:hover .gallery-caption {
+        transform: translateX(-100%);
     }
 }
 
@@ -249,9 +253,8 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    filter: grayscale(100%);
     transition: 0.5s;
-    z-index: 95;
+    z-index: -1;
 }
 
 .gallery-zoom {
@@ -265,7 +268,20 @@
     border-radius: 5rem;
     background: black;
     opacity: 0;
-    z-index: 99;
+    z-index: 1;
+}
+
+.gallery-caption {
+    @include flex-column-center;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    background: rgba(27, 27, 27, 0.692);
+    color: $white;
 }
 
 /*----------------------------------------Thanks----*/
@@ -343,6 +359,7 @@
 
 .contact-map {
     width: 50%;
+    height: 100%;
 }
 
 .contact-info__hours {
@@ -368,12 +385,26 @@
     padding: 6rem 0;
 }
 
-.team__grid {
+.team__header {
+    text-align: center;
+}
+
+.owner-section {
+    display: flex;
+}
+
+.team__grid__one {
+    @include grid-template(repeat(2, 1fr), auto);
+    margin-bottom: 2rem;
+}
+
+.team__grid__two {
     @include grid-template(repeat(4, 1fr), auto);
 }
 
 .about-video {
     margin: 0 2rem 6rem 2rem;
+    text-align: center;
 }
 
 .embed-container {
@@ -412,12 +443,18 @@
     background: $white;
 }
 
-/*----------------------------------Loyalty Card----*/
+/*--------------------------------------------Loyalty Card----*/
 .card-hero {
     @include flex-column-center;
 }
 
-
+/*------------------------------------------Error 404 Page----*/
+.error-404 {
+    @include flex-column-center;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+}
 
 /*----------------------------------------Footer----*/
 footer {
