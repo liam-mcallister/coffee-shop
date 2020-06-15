@@ -17,7 +17,7 @@
 
 
 */
-/*------------------------------------------Body----*/
+/*-----------------------------------Page Bodies----*/
 .grid-index {
   display: -ms-grid;
   display: grid;
@@ -72,14 +72,15 @@
       grid-template-rows: 60px 400px auto;
 }
 
-/*-----------------------------------------Inner----*/
-.inner-lg, .inner-md {
+/*----------------------------------------Inners----*/
+.inner-lg {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .inner-md {
   max-width: 800px;
+  margin: 0 auto;
 }
 
 /*----------------------------------------Navbar----*/
@@ -166,7 +167,7 @@
 .hero {
   -ms-grid-column: 1;
   grid-column: 1fr;
-  grid-row: auto;
+  grid-row: calc(100vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,8 +258,8 @@
   margin-bottom: 2rem;
 }
 
-/*---------------------------------------Booking----*/
-.booking {
+/*--------------------------------Booking Banner----*/
+.booking-banner {
   -ms-grid-column: 1;
   grid-column: 1fr;
   grid-row: auto;
@@ -281,7 +282,7 @@
   transition: all 0.5s;
 }
 
-.booking h2 {
+.booking-banner h2 {
   margin-top: 1rem;
 }
 
@@ -501,7 +502,10 @@
 
 /*-----------------------------------------------Menu Page----*/
 /*----------------------------------------Hero 2----*/
-.hero--menu {
+.menu-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,7 +533,10 @@
 
 /*--------------------------------------------Contact Page----*/
 /*----------------------------------------Contact Hero----*/
-.hero--contact {
+.contact-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,12 +555,18 @@
 
 /*----------------------------------------Contact Form----*/
 .contact {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   padding: 6rem 2rem;
   text-align: center;
 }
 
 /*----------------------------------------Contact Info----*/
 .contact-info {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   margin: 0 2rem 6rem 2rem;
 }
 
@@ -569,6 +582,8 @@
 
 .contact-info__location {
   grid-column: span 8;
+  -ms-grid-row: 550;
+  grid-row: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,6 +615,8 @@
 
 .contact-info__hours {
   grid-column: span 4;
+  -ms-grid-row: 550;
+  grid-row: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,11 +631,15 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 3rem 1rem;
 }
 
 /*--------------------------------------------About Page----*/
 /*----------------------------------------About Hero----*/
-.hero-about {
+.about-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,14 +657,16 @@
 }
 
 .about {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   padding: 6rem 2rem;
   text-align: center;
 }
 
-.team {
+.about-team {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
+  grid-column: 1fr;
   grid-row: auto;
   padding: 6rem 0;
 }
@@ -678,6 +701,9 @@
 }
 
 .about-video {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   margin: 0 2rem 6rem 2rem;
   text-align: center;
 }
@@ -702,7 +728,10 @@
 
 /*--------------------------------------------Booking Page----*/
 /*----------------------------------------Booking Hero----*/
-.hero-booking {
+.booking-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,11 +748,11 @@
   text-align: center;
 }
 
-.book-container {
+.booking {
   margin: 6rem 2rem;
 }
 
-.book {
+.booking-container {
   padding: 6rem 4rem;
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
@@ -731,8 +760,11 @@
   background: #ffffff;
 }
 
-/*--------------------------------------------Loyalty Card----*/
-.card-hero {
+/*---------------------------------------Loyalty Card Page----*/
+.loyalty-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,6 +779,12 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.loyalty-banner {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
 }
 
 /*------------------------------------------Error 404 Page----*/
@@ -1051,6 +1089,10 @@ a:hover {
   color: #ff659d;
 }
 
+.contact-link {
+  margin-top: 1rem;
+}
+
 footer a {
   color: #7FD1B9;
 }
@@ -1097,6 +1139,10 @@ footer a {
 }
 
 .feature-icon {
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
   margin-bottom: 1rem;
 }
 
@@ -1155,6 +1201,11 @@ footer a {
           flex: 1;
   height: 17px;
   border-bottom: 2px dotted #1A1A1C;
+  margin: 0 0.2rem;
+}
+
+.dots--white {
+  border-bottom: 2px dotted #ffffff;
 }
 
 .card__info {
@@ -1184,6 +1235,11 @@ footer a {
   padding: 2rem;
   -webkit-box-shadow: inset 0 0 0 10px #7FD1B9;
           box-shadow: inset 0 0 0 10px #7FD1B9;
+}
+
+.card--hours {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 /*-----------------------------------------Forms----*/
@@ -1338,8 +1394,8 @@ textarea:hover {
   .contact-info__grid {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: 550px 550px;
-        grid-template-rows: 550px 550px;
+    -ms-grid-rows: 550px auto;
+        grid-template-rows: 550px auto;
   }
   .contact-info__location {
     grid-column: span 12;
@@ -1351,7 +1407,9 @@ textarea:hover {
     display: flex;
   }
   .contact-info__hours {
-    grid-column: span 12;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4 / 10;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
@@ -1461,7 +1519,7 @@ textarea:hover {
   }
   .contact-info__hours {
     width: 100%;
-    height: 300px;
+    padding: 3rem 5rem;
   }
   .about-video {
     margin: 0 1rem 6rem 1rem;
@@ -1517,6 +1575,9 @@ textarea:hover {
   }
   .contact-info {
     margin: 0 0 6rem 0;
+  }
+  .contact-info__hours {
+    padding: 3rem 1rem;
   }
   .team__grid__one {
     display: -ms-grid;
@@ -1610,6 +1671,19 @@ body {
   background: #ffffff;
 }
 
+/*---------------------------------------Home Page----*/
+.booking-banner {
+  border: 1rem solid #ffffff;
+  background: #1A1A1C;
+  background: url(/images/bg-dark.png);
+  color: #ffffff;
+}
+
+.booking-banner:hover {
+  border: 1rem solid #ff659d;
+  color: #ff659d;
+}
+
 /*------------------------------------------Hero----*/
 .hero {
   -webkit-box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
@@ -1619,7 +1693,7 @@ body {
 }
 
 /*------------------------------------------Menu----*/
-.hero--menu {
+.menu-hero {
   background: url(/images/coffee3.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
@@ -1636,28 +1710,16 @@ body {
   background: #ffffff;
 }
 
-/*---------------------------------------Booking----*/
-.hero-booking {
+/*---------------------------------------Booking Page----*/
+.booking-hero {
   background: url(/images/barrista2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: #ffffff;
 }
 
-.booking {
-  border: 1rem solid #ffffff;
-  background: #1A1A1C;
-  background: url(/images/bg-dark.png);
-  color: #ffffff;
-}
-
-.booking:hover {
-  border: 1rem solid #ff659d;
-  color: #ff659d;
-}
-
-/*---------------------------------------Contact----*/
-.hero--contact {
+/*---------------------------------------Contact Page----*/
+.contact-hero {
   background: url(/images/cafe.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
@@ -1665,7 +1727,7 @@ body {
 }
 
 .contact-address {
-  background: darkcyan;
+  background: #7FD1B9;
 }
 
 .contact-info__hours {
@@ -1674,7 +1736,7 @@ body {
 }
 
 /*-----------------------------------------About----*/
-.hero-about {
+.about-hero {
   background: url(/images/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
@@ -1686,7 +1748,7 @@ body {
 }
 
 /*----------------------------------Loyalty Card----*/
-.card-hero {
+.loyalty-hero {
   background: url(/images/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;

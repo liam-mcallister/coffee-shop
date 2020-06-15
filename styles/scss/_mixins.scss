@@ -14,6 +14,11 @@
     grid-template-rows: $temp-rows;
 }
 
+@mixin grid-cols-rows($cols, $rows) {
+    grid-column: $cols;
+    grid-row: $rows;
+}
+
 /*------------------------------------------Flex----*/
 @mixin flex-column-center {
     display: flex;
