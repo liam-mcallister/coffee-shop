@@ -64,7 +64,7 @@ p {
   transition: all 0.5s;
 
   & a {
-    color: $white;
+    color: white;
   }
 
   &:hover {
@@ -75,9 +75,9 @@ p {
 
 .btn-clear {
   @extend .btn;
-  border: 2px solid $white;
+  border: 2px solid white;
   background: transparent;
-  color: $white;
+  color: white;
   transition: all 0.5s;
 
   &:hover {
@@ -109,7 +109,7 @@ p {
   left: 32px;
   z-index: 100;
   border-radius: 3rem;
-  background: $white;
+  background: white;
   transition: all 0.5s;
 
   &:hover {
@@ -204,10 +204,10 @@ footer a {
 .footer-blog-link {
   text-transform: none;
   font-weight: normal;
-  color: $white;
+  color: white;
 
   &:hover {
-    color: $white;
+    color: white;
     text-decoration: underline;
   }
 }
@@ -294,7 +294,7 @@ footer a {
 }
 
 .dots--white {
-  border-bottom: 2px dotted $white;
+  border-bottom: 2px dotted white;
 }
 
 .card__info {
@@ -306,7 +306,7 @@ footer a {
 }
 
 .features-card {
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
   height: 100%;
   padding: 2rem;
   box-shadow: inset 0 0 0 10px $color4;
@@ -340,12 +340,12 @@ form {
   &:focus {
     border: 1px solid $color1;
     transition: all 0.5s ease-in;
-    background: $white;
+    background: white;
   }
 
   &:hover {
     transition: all 0.5s ease-in;
-    background: $white;
+    background: white;
   }
 }
 
@@ -365,10 +365,29 @@ textarea {
 
   &:focus {
     border: 1px solid $color1;
-    background: $white;
+    background: white;
   }
 
   &:hover {
-    background: $white;
+    background: white;
   }
+}
+
+/*-----------------------------------------Video----*/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

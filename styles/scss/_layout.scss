@@ -2,12 +2,43 @@
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
-
-
+1. Page Bodies
+2. Inners
+3. Navigation
+4. Home Page
+  4.1. Home Hero
+  4.2. Intro
+  4.3. Home Menu
+  4.4. Booking Banner
+  4.5. Features
+  4.6. Gallery
+  4.7. Thanks
+5. Menu Page
+  5.1. Menu Hero
+  5.2. Menu
+6. Contact Page
+  6.1. Contact Hero
+  6.2. Contact Form
+  6.3. Contact Info
+7. About Page
+  7.1. About Hero
+  7.2. About
+  7.3. About Team
+  7.4. About Video
+8. Booking Page
+  8.1. Booking Hero
+  8.2. Booking Form
+9. Loyalty Card Page
+  9.1. Loyalty Card Hero
+  9.2. Loyalty Card Banner
+10. Footer
+  10.1. Footer Top
+  10.2. Footer Bottom
+11. Error 404 Page
 
 */
 
-/*-----------------------------------Page Bodies----*/
+/*--------------------------------1. Page Bodies----*/
 .grid-index {
   @include grid-template(1fr, 60px calc(100vh - 60px) auto);
 }
@@ -32,7 +63,7 @@
   @include grid-template(1fr, 60px 400px auto);
 }
 
-/*----------------------------------------Inners----*/
+/*-------------------------------------2. Inners----*/
 .inner-lg {
   max-width: 1200px;
   margin: 0 auto;
@@ -43,18 +74,16 @@
   margin: 0 auto;
 }
 
-/*----------------------------------------Navbar----*/
+/*---------------------------------3. Navigation----*/
 .navbar {
   @include grid-cols-rows(1fr, 60px);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex-layout(row, flex-end, center);
   position: relative;
   padding: 1rem 2rem;
 }
 
 .navbar-nav {
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
   position: fixed;
   top: 0px;
   left: -300px;
@@ -79,9 +108,6 @@
 }
 
 .navbar-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 1rem 2rem;
 }
 
@@ -93,12 +119,13 @@
   }
 }
 
-/*-----------------------------------------------Home Page----*/
+/*----------------------------------4. Home Page----*/
 
-/*------------------------------------------Hero----*/
-.hero {
+/*----------------------4.1. Home Hero----*/
+.home-hero {
   @include grid-cols-rows(1fr, calc(100vh - 60px));
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
+  text-align: center;
   padding: 6rem 2rem;
 
   & p {
@@ -106,10 +133,10 @@
   }
 }
 
-/*-----------------------------------------Intro----*/
+/*--------------------------4.2. Intro----*/
 .intro {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  text-align: center;
   padding: 6rem 2rem;
 }
 
@@ -127,10 +154,10 @@
   }
 }
 
-/*-----------------------------------------Menu----*/
-.menu {
+/*----------------------4.3. Home Menu----*/
+.home-menu {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  text-align: center;
   padding: 6rem 2rem;
 }
 
@@ -140,10 +167,10 @@
   margin-bottom: 2rem;
 }
 
-/*--------------------------------Booking Banner----*/
+/*-----------------4.4. Booking Banner----*/
 .booking-banner {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  text-align: center;
   padding: 6rem 0;
   transition: all 0.5s;
 
@@ -152,10 +179,10 @@
   }
 }
 
-/*--------------------------------------Features----*/
+/*-----------------------4.5. Features----*/
 .features {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  text-align: center;
   padding: 6rem 2rem;
 }
 
@@ -204,7 +231,7 @@
   height: 100%;
 }
 
-/*---------------------------------------Gallery----*/
+/*------------------------4.6. Gallery----*/
 .gallery {
   @include grid-cols-rows(1fr, auto);
 }
@@ -259,13 +286,12 @@
   transform: translate(-50%, 0);
   transition: 0.5s;
   border-radius: 5rem;
-  background: black;
   opacity: 0;
   z-index: 1;
 }
 
 .gallery-caption {
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
   position: absolute;
   top: 0px;
   left: 100%;
@@ -273,20 +299,16 @@
   height: 100%;
   transition: 0.5s;
   z-index: 1;
-  background: rgba(27, 27, 27, 0.692);
-  color: $white;
 }
 
-/*----------------------------------------Thanks----*/
+/*-------------------------4.7. Thanks----*/
 .thanks {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
   padding: 6rem 2rem;
 }
 
 .thanks__info {
-  display: flex;
-  align-items: center;
+  @include flex-layout(row, center, center);
 }
 
 .thanks__img {
@@ -299,39 +321,37 @@
   padding-left: 2rem;
 }
 
-/*-----------------------------------------------Menu Page----*/
+/*----------------------------------5. Menu Page----*/
 
-/*----------------------------------------Hero 2----*/
+/*----------------------5.1. Menu Hero----*/
 .menu-hero {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
 }
 
-/*----------------------------------------Menu----*/
-.menu--white h2 {
-  margin-top: 3rem;
-
-  &:first-child {
-    margin-top: 2rem;
-  }
+/*---------------------------5.2. Menu----*/
+.menu {
+  @include grid-cols-rows(1fr, auto);
+  text-align: center;
+  padding: 6rem 2rem;
 }
 
-/*--------------------------------------------Contact Page----*/
+/*-------------------------------6. Contact Page----*/
 
-/*----------------------------------------Contact Hero----*/
+/*-------------------6.1. Contact Hero----*/
 .contact-hero {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
 }
 
-/*----------------------------------------Contact Form----*/
+/*-------------------6.2. Contact Form----*/
 .contact {
   @include grid-cols-rows(1fr, auto);
   padding: 6rem 2rem;
   text-align: center;
 }
 
-/*----------------------------------------Contact Info----*/
+/*-------------------6.3. Contact Info----*/
 .contact-info {
   @include grid-cols-rows(1fr, auto);
   margin: 0 2rem 6rem 2rem;
@@ -349,7 +369,8 @@
 
 .contact-address {
   width: 50%;
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
+  text-align: center;
   padding: 0 3rem;
 }
 
@@ -360,24 +381,26 @@
 
 .contact-info__hours {
   @include grid-cols-rows(span 4, 550px);
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
   padding: 3rem 1rem;
 }
 
-/*--------------------------------------------About Page----*/
+/*---------------------------------7. About Page----*/
 
-/*----------------------------------------About Hero----*/
+/*---------------------7.1. About Hero----*/
 .about-hero {
   @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  @include flex-layout(column, center, center);
 }
 
+/*--------------------------7.2. About----*/
 .about {
   @include grid-cols-rows(1fr, auto);
   padding: 6rem 2rem;
   text-align: center;
 }
 
+/*---------------------7.3. About Team----*/
 .about-team {
   @include grid-cols-rows(1fr, auto);
   padding: 6rem 0;
@@ -400,75 +423,51 @@
   @include grid-template(repeat(4, 1fr), auto);
 }
 
+/*--------------------7.4. About Video----*/
 .about-video {
   @include grid-cols-rows(1fr, auto);
   margin: 0 2rem 6rem 2rem;
   text-align: center;
 }
 
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
+/*-------------------------------8. Booking Page----*/
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/*--------------------------------------------Booking Page----*/
-
-/*----------------------------------------Booking Hero----*/
+/*--------------------8.1 Booking Hero----*/
 .booking-hero {
-    @include grid-cols-rows(1fr, auto);
-  @include flex-column-center;
+  @include grid-cols-rows(1fr, auto);
+  @include flex-layout(column, center, center);
 }
 
+/*--------------------8.2 Booking Form----*/
 .booking {
+  @include grid-cols-rows(1fr, auto);
   margin: 6rem 2rem;
 }
 
-.booking-container {
+.booking-form {
   padding: 6rem 4rem;
   transform: translateY(-200px);
-  border: 4px solid $color6;
-  background: $white;
 }
 
-/*---------------------------------------Loyalty Card Page----*/
+/*--------------------------9. Loyalty Card Page----*/
+
+/*--------------9.1. Loyalty Card Hero----*/
 .loyalty-hero {
-  grid-column: 1fr;
-  grid-row: auto;
-  @include flex-column-center;
+  @include grid-cols-rows(1fr, auto);
+  @include flex-layout(column, center, center);
 }
 
+/*------------9.2. Loyalty Card Banner----*/
 .loyalty-banner {
-  grid-column: 1fr;
-  grid-row: auto;
+  @include grid-cols-rows(1fr, auto);
 }
 
-/*------------------------------------------Error 404 Page----*/
-.error-404 {
-  @include flex-column-center;
-  height: 100vh;
-  width: 100vw;
-  padding: 1rem;
-}
-
-/*----------------------------------------Footer----*/
+/*------------------------------------10. Footer----*/
 footer {
-  grid-column: 1fr;
-  grid-row: auto;
+  @include grid-cols-rows(1fr, auto);
 }
 
+/*--------------------10.1. Footer Top----*/
 .footer__grid {
   @include grid-template(repeat(4, 1fr), auto);
   grid-gap: 0 2rem;
@@ -476,23 +475,19 @@ footer {
 }
 
 .footer__grid__col1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  @include grid-cols-rows(1 / 2, auto);
 }
 
 .footer__grid__col2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  @include grid-cols-rows(2 / 3, auto);
 }
 
 .footer__grid__col3 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  @include grid-cols-rows(3 / 4, auto);
 }
 
 .footer__grid__col4 {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
+  @include grid-cols-rows(4 / 5, auto);
 }
 
 .footer-icons {
@@ -514,13 +509,21 @@ footer {
   margin-bottom: 2rem;
 }
 
+/*-----------------10.2. Footer Bottom----*/
 .footer__bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-layout(row, center, center);
   padding: 2rem 0;
 
   & p {
     margin: 0;
   }
+}
+
+/*----------------------------11. Error 404 Page----*/
+.error-404 {
+  @include grid-cols-rows(1fr, auto);
+  @include flex-layout(column, center, center);
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
 }
