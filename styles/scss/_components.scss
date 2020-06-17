@@ -2,12 +2,37 @@
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
+1. Headings
+2. Paragraphs
+3. Buttons
+  3.1. Default Button
+  3.2. Clear Button
+  3.3. Burger Button
+4. Links
+  4.1. Default Link
+  4.2. Contact Link
+  4.3. Footer Link
+5. Icons
+  5.1. Default Icon
+  5.2. Medium Icon
+  5.3. Large Icon
+  5.4. Feature Icon
+  5.5. Contact Icon
+6. Horizontal Rule
+  6.1. Medium HR
+  6.2. Small HR
+7. Cards
+  7.1. Default Card
+  7.2. Feature Card
+  7.3. Opening Hours Card
+8. Form
+9. Video
 
 
 
 */
 
-/*--------------------------------------Headings----*/
+/*-----------------------------------1. Headings----*/
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 4rem;
@@ -35,7 +60,7 @@ h3 {
   color: $color6;
 }
 
-/*------------------------------------Paragraphs----*/
+/*---------------------------------2. Paragraphs----*/
 p {
   line-height: 1.5rem;
 }
@@ -51,8 +76,9 @@ p {
   margin-bottom: 2rem;
 }
 
-/*---------------------------------------Buttons----*/
-/*------------------------------Button----*/
+/*------------------------------------3. Buttons----*/
+
+/*-----------------3.1. Default Button----*/
 .btn {
   display: inline-block;
   border-radius: 3rem;
@@ -73,6 +99,7 @@ p {
   }
 }
 
+/*-------------------3.2. Clear Button----*/
 .btn-clear {
   @extend .btn;
   border: 2px solid white;
@@ -87,7 +114,7 @@ p {
   }
 }
 
-/*-----------------------Burger Button----*/
+/*------------------3.3. Burger Button----*/
 .burger-btn {
   transform: scale(3);
   opacity: 0;
@@ -171,7 +198,9 @@ p {
   transform: translateX(300px);
 }
 
-/*-----------------------------------------Links----*/
+/*--------------------------------------4. Links----*/
+
+/*-------------------4.1. Default Link----*/
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -184,10 +213,12 @@ a {
   }
 }
 
+/*-------------------4.2. Contact Link----*/
 .contact-link {
   margin-top: 1rem;
 }
 
+/*--------------------4.3. Footer Link----*/
 footer a {
   color: $color4;
 }
@@ -212,7 +243,9 @@ footer a {
   }
 }
 
-/*-----------------------------------------Icons----*/
+/*--------------------------------------5. Icons----*/
+
+/*-------------------5.1. Default Icon----*/
 .icon {
   height: 30px;
   width: 30px;
@@ -222,25 +255,31 @@ footer a {
   }
 }
 
+/*--------------------5.2. Medium Icon----*/
 .icon-md {
   height: 50px;
   width: 50px;
 }
 
+/*---------------------5.3. Large Icon----*/
 .icon-lg {
   height: 70px;
   width: 70px;
 }
 
+/*-------------------5.4. Feature Icon----*/
 .feature-icon {
   margin-bottom: 1rem;
 }
 
+/*-------------------5.5. Contact Icon----*/
 .contact-icon {
   margin-bottom: 1rem;
 }
 
-/*-------------------------------------------HR----*/
+/*----------------------------6. Horizontal Rule----*/
+
+/*----------------------6.1. Medium HR----*/
 .hr-md {
   height: 3px;
   width: 15rem;
@@ -250,21 +289,24 @@ footer a {
   color: $color6;
 }
 
+.hr-md-left {
+  margin: 2rem 0 0.5rem 0;
+}
+
+/*-----------------------6.2. Small HR----*/
 .hr-sm {
   @extend .hr-md;
   width: 10rem;
   margin: 0 auto 2rem auto;
 }
 
-.hr-md-left {
-  margin: 2rem 0 0.5rem 0;
-}
-
 .hr-sm-left {
   margin: 0 0 2rem 0;
 }
 
-/*-----------------------------------------Cards----*/
+/*--------------------------------------7. Cards----*/
+
+/*-------------------7.1. Default Card----*/
 .card {
   min-width: 50%;
   max-width: 50%;
@@ -305,6 +347,7 @@ footer a {
   }
 }
 
+/*-------------------7.2. Feature Card----*/
 .features-card {
   @include flex-layout(column, center, center);
   height: 100%;
@@ -312,12 +355,13 @@ footer a {
   box-shadow: inset 0 0 0 10px $color4;
 }
 
+/*-------------7.3. Opening Hours Card----*/
 .card--hours {
   min-width: 100%;
   max-width: 100%;
 }
 
-/*-----------------------------------------Forms----*/
+/*--------------------------------------8. Form----*/
 form {
   display: flex;
   flex-direction: column;
@@ -373,7 +417,7 @@ textarea {
   }
 }
 
-/*-----------------------------------------Video----*/
+/*--------------------------------------9. Video----*/
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;

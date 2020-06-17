@@ -851,11 +851,36 @@ footer {
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
+1. Headings
+2. Paragraphs
+3. Buttons
+  3.1. Default Button
+  3.2. Clear Button
+  3.3. Burger Button
+4. Links
+  4.1. Default Link
+  4.2. Contact Link
+  4.3. Footer Link
+5. Icons
+  5.1. Default Icon
+  5.2. Medium Icon
+  5.3. Large Icon
+  5.4. Feature Icon
+  5.5. Contact Icon
+6. Horizontal Rule
+  6.1. Medium HR
+  6.2. Small HR
+7. Cards
+  7.1. Default Card
+  7.2. Feature Card
+  7.3. Opening Hours Card
+8. Form
+9. Video
 
 
 
 */
-/*--------------------------------------Headings----*/
+/*-----------------------------------1. Headings----*/
 h1, h2, h3 {
   font-family: "Oswald", sans-serif;
   font-size: 4rem;
@@ -881,7 +906,7 @@ h3 {
   color: #ff659d;
 }
 
-/*------------------------------------Paragraphs----*/
+/*---------------------------------2. Paragraphs----*/
 p {
   line-height: 1.5rem;
 }
@@ -897,8 +922,8 @@ p {
   margin-bottom: 2rem;
 }
 
-/*---------------------------------------Buttons----*/
-/*------------------------------Button----*/
+/*------------------------------------3. Buttons----*/
+/*-----------------3.1. Default Button----*/
 .btn, .btn-clear {
   display: inline-block;
   border-radius: 3rem;
@@ -920,6 +945,7 @@ p {
   color: #1A1A1C;
 }
 
+/*-------------------3.2. Clear Button----*/
 .btn-clear {
   border: 2px solid white;
   background: transparent;
@@ -934,7 +960,7 @@ p {
   color: #1A1A1C;
 }
 
-/*-----------------------Burger Button----*/
+/*------------------3.3. Burger Button----*/
 .burger-btn {
   -webkit-transform: scale(3);
           transform: scale(3);
@@ -1018,7 +1044,8 @@ p {
           transform: translateX(300px);
 }
 
-/*-----------------------------------------Links----*/
+/*--------------------------------------4. Links----*/
+/*-------------------4.1. Default Link----*/
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -1031,10 +1058,12 @@ a:hover {
   color: #ff659d;
 }
 
+/*-------------------4.2. Contact Link----*/
 .contact-link {
   margin-top: 1rem;
 }
 
+/*--------------------4.3. Footer Link----*/
 footer a {
   color: #7FD1B9;
 }
@@ -1059,7 +1088,8 @@ footer a {
   text-decoration: underline;
 }
 
-/*-----------------------------------------Icons----*/
+/*--------------------------------------5. Icons----*/
+/*-------------------5.1. Default Icon----*/
 .icon {
   height: 30px;
   width: 30px;
@@ -1070,25 +1100,30 @@ footer a {
           filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
 }
 
+/*--------------------5.2. Medium Icon----*/
 .icon-md {
   height: 50px;
   width: 50px;
 }
 
+/*---------------------5.3. Large Icon----*/
 .icon-lg {
   height: 70px;
   width: 70px;
 }
 
+/*-------------------5.4. Feature Icon----*/
 .feature-icon {
   margin-bottom: 1rem;
 }
 
+/*-------------------5.5. Contact Icon----*/
 .contact-icon {
   margin-bottom: 1rem;
 }
 
-/*-------------------------------------------HR----*/
+/*----------------------------6. Horizontal Rule----*/
+/*----------------------6.1. Medium HR----*/
 .hr-md, .hr-sm {
   height: 3px;
   width: 15rem;
@@ -1098,20 +1133,22 @@ footer a {
   color: #ff659d;
 }
 
+.hr-md-left {
+  margin: 2rem 0 0.5rem 0;
+}
+
+/*-----------------------6.2. Small HR----*/
 .hr-sm {
   width: 10rem;
   margin: 0 auto 2rem auto;
-}
-
-.hr-md-left {
-  margin: 2rem 0 0.5rem 0;
 }
 
 .hr-sm-left {
   margin: 0 0 2rem 0;
 }
 
-/*-----------------------------------------Cards----*/
+/*--------------------------------------7. Cards----*/
+/*-------------------7.1. Default Card----*/
 .card {
   min-width: 50%;
   max-width: 50%;
@@ -1158,6 +1195,7 @@ footer a {
   margin-bottom: 0;
 }
 
+/*-------------------7.2. Feature Card----*/
 .features-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,12 +1216,13 @@ footer a {
           box-shadow: inset 0 0 0 10px #7FD1B9;
 }
 
+/*-------------7.3. Opening Hours Card----*/
 .card--hours {
   min-width: 100%;
   max-width: 100%;
 }
 
-/*-----------------------------------------Forms----*/
+/*--------------------------------------8. Form----*/
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1251,7 +1290,7 @@ textarea:hover {
   background: white;
 }
 
-/*-----------------------------------------Video----*/
+/*--------------------------------------9. Video----*/
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1274,32 +1313,62 @@ textarea:hover {
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
-
-
+1. Screen Media Queries (Height)
+    1.1. Max Height: 600px
+        1.1.1. Index Grid
+2. Screen Media Queries (Width)
+    2.1. Min Width: 576px
+        2.1.1. Thanks Section
+    2.2. Min Width: 768px
+        2.2.1. Thanks Section
+    2.3. Min Width: 992px
+    2.4. Min Width: 1200px
+    2.5. Max Width: 1199px
+    2.6. Max Width: 991px
+        2.6.1. Features Section
+        2.6.2. Contact Page
+        2.6.3. Footer
+    2.7. Max Width: 767px
+        2.7.1. Thanks Section
+        2.7.2. Menu Section
+        2.7.3. Gallery Section
+        2.7.4. Contact Page
+        2.7.5. About Page
+        2.7.6. Card
+    2.8. Max Width: 575px
+3. Print Media Query 
 
 */
-/*----------------------------------------Height----*/
+/*--------------1. Screen Media Queries (Height)----*/
+/*---------------1.1. Max Height 660px----*/
 @media (max-height: 600px) {
+  /*-------1.1.1. Index Grid----*/
   .grid-index {
     -ms-grid-rows: 60px auto;
         grid-template-rows: 60px auto;
   }
 }
 
-/*-----------------------------------------Width----*/
+/*---------------2. Screen Media Queries (Width)----*/
+/*---------------2.1. Min Width: 576px----*/
 @media (min-width: 576px) {
+  /*--------2.1.1. Thanks Section----*/
   .thanks__img {
     padding: 0 5rem;
   }
 }
 
+/*---------------2.2. Min Width: 768px----*/
 @media (min-width: 768px) {
+  /*--------2.2.1. Thanks Section----*/
   .thanks__img {
     padding: 0;
   }
 }
 
+/*---------------2.6. Max Width: 991px----*/
 @media (max-width: 991px) {
+  /*----2.6.1. Features Section----*/
   .features__top, .features__middle, .features__bottom {
     grid-gap: 1rem 0;
   }
@@ -1351,6 +1420,7 @@ textarea:hover {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
+  /*----------2.6.2. Contact Page----*/
   .contact-info__grid {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
@@ -1374,6 +1444,7 @@ textarea:hover {
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
   }
+  /*----------------2.6.3. Footer----*/
   .footer__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -1415,7 +1486,9 @@ textarea:hover {
   }
 }
 
+/*---------------2.7. Max Width: 767px----*/
 @media (max-width: 767px) {
+  /*------2.7.1. Thanks Section----*/
   .thanks__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1434,17 +1507,16 @@ textarea:hover {
     text-align: center;
     padding-left: 0;
   }
+  /*----------2.7.2. Menu Section----*/
   .menu__list {
     padding: 0 4rem;
   }
+  /*-------2.7.3. Gallery Section----*/
   .gallery__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .card {
-    min-width: 100%;
-    max-width: 100%;
-  }
+  /*----------2.7.4. Contact Page----*/
   .contact {
     padding: 6rem 1rem;
   }
@@ -1481,11 +1553,18 @@ textarea:hover {
     width: 100%;
     padding: 3rem 5rem;
   }
+  /*------------2.7.5. About Page----*/
   .about-video {
     margin: 0 1rem 6rem 1rem;
   }
+  /*------------------2.7.6. Card----*/
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
+/*---------------2.8. Max Width: 575px----*/
 @media (max-width: 575px) {
   h1, h2, h3 {
     font-size: 3rem;
@@ -1508,18 +1587,6 @@ textarea:hover {
   }
   .features {
     padding: 6rem 1rem;
-  }
-  .input-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .form-input {
-    width: 100%;
   }
   .booking {
     margin: 6rem 1rem;
@@ -1594,9 +1661,21 @@ textarea:hover {
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
   }
+  .input-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-input {
+    width: 100%;
+  }
 }
 
-/*-----------------------------------------Print----*/
+/*-------------------------3. Print Media Query ----*/
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------

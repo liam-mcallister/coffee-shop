@@ -2,290 +2,327 @@
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
-
-
+1. Screen Media Queries (Height)
+    1.1. Max Height: 600px
+        1.1.1. Index Grid
+2. Screen Media Queries (Width)
+    2.1. Min Width: 576px
+        2.1.1. Thanks Section
+    2.2. Min Width: 768px
+        2.2.1. Thanks Section
+    2.3. Min Width: 992px
+    2.4. Min Width: 1200px
+    2.5. Max Width: 1199px
+    2.6. Max Width: 991px
+        2.6.1. Features Section
+        2.6.2. Contact Page
+        2.6.3. Footer
+    2.7. Max Width: 767px
+        2.7.1. Thanks Section
+        2.7.2. Menu Section
+        2.7.3. Gallery Section
+        2.7.4. Contact Page
+        2.7.5. About Page
+        2.7.6. Card
+    2.8. Max Width: 575px
+3. Print Media Query 
 
 */
 
-/*----------------------------------------Height----*/
+/*--------------1. Screen Media Queries (Height)----*/
+
+/*---------------1.1. Max Height 660px----*/
 @media (max-height: 600px) {
-    .grid-index {
-        grid-template-rows: 60px auto;
-    }
+  /*-------1.1.1. Index Grid----*/
+  .grid-index {
+    grid-template-rows: 60px auto;
+  }
 }
 
-/*-----------------------------------------Width----*/
-// Small devices (landscape phones, 576px and up)
+/*---------------2. Screen Media Queries (Width)----*/
+
+/*---------------2.1. Min Width: 576px----*/
 @media (min-width: 576px) {
-    .thanks__img {
-        padding: 0 5rem;
-    }
+  /*--------2.1.1. Thanks Section----*/
+  .thanks__img {
+    padding: 0 5rem;
+  }
 }
 
-// Medium devices (tablets, 768px and up)
+/*---------------2.2. Min Width: 768px----*/
 @media (min-width: 768px) {
-    .thanks__img {
-        padding: 0;
-    }
+  /*--------2.2.1. Thanks Section----*/
+  .thanks__img {
+    padding: 0;
+  }
 }
 
-// // Large devices (desktops, 992px and up)
+// /*---------------2.3. Min Width: 992px----*/
 // @media (min-width: 992px) {
 // }
 
-// // Extra large devices (large desktops, 1200px and up)
+// /*--------------2.4. Min Width: 1200px----*/
 // @media (min-width: 1200px) {
 // }
 
-// // Large devices (desktops, less than 1200px)
+// /*--------------2.5. Max Width: 1199px----*/
 // @media (max-width: 1199px) {
 // }
 
-// Medium devices (tablets, less than 992px)
+/*---------------2.6. Max Width: 991px----*/
 @media (max-width: 991px) {
-    .features__top {
-        grid-gap: 1rem 0;
-    }
+  /*----2.6.1. Features Section----*/
+  .features__top {
+    grid-gap: 1rem 0;
+  }
 
-    .features__top__left {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-    }
+  .features__top__left {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
 
-    .features__top__right {
-        grid-column: 1 / 4;
-        grid-row: 1 / 2;
-    }
+  .features__top__right {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
 
-    .features__middle__left {
-        grid-column: 1 / 4;
-        grid-row: 1 / 2;
-    }
+  .features__middle__left {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
 
-    .features__middle__right {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-    }
+  .features__middle__right {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
 
-    .features__bottom__left {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-    }
+  .features__bottom__left {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
 
-    .features__bottom__right {
-        grid-column: 1 / 4;
-        grid-row: 1 / 2;
-    }
+  .features__bottom__right {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
 
-    .contact-info__grid {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 550px auto;
-    }
+  /*----------2.6.2. Contact Page----*/
+  .contact-info__grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 550px auto;
+  }
 
-    .contact-info__location {
-        grid-column: span 12;
-        grid-row: 1 / 2;
-        display: flex;
-    }
+  .contact-info__location {
+    grid-column: span 12;
+    grid-row: 1 / 2;
+    display: flex;
+  }
 
-    .contact-info__hours {
-        grid-column: 4 / 10;
-        grid-row: 2 / 3;
-    }
+  .contact-info__hours {
+    grid-column: 4 / 10;
+    grid-row: 2 / 3;
+  }
 
-    .footer__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-gap: 6rem;
-    }
+  /*----------------2.6.3. Footer----*/
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 6rem;
+  }
 
-    .footer__grid__col1 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
+  .footer__grid__col1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 
-    .footer__grid__col2 {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
+  .footer__grid__col2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 
-    .footer__grid__col3 {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
+  .footer__grid__col3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 
-    .footer__grid__col4 {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
+  .footer__grid__col4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 
-// Small devices (landscape phones, less than 768px)
+/*---------------2.7. Max Width: 767px----*/
 @media (max-width: 767px) {
-    .thanks__info {
-        display: flex;
-        flex-direction: column;
-    }
+  /*------2.7.1. Thanks Section----*/
+  .thanks__info {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .thanks__img {
-        width: 100%;
-    }
+  .thanks__img {
+    width: 100%;
+  }
 
-    .thanks__text {
-        width: 100%;
-        padding-top: 5rem;
-        text-align: center;
-        padding-left: 0;
-    }
+  .thanks__text {
+    width: 100%;
+    padding-top: 5rem;
+    text-align: center;
+    padding-left: 0;
+  }
 
-    .menu__list {
-        padding: 0 4rem;
-    }
+  /*----------2.7.2. Menu Section----*/
+  .menu__list {
+    padding: 0 4rem;
+  }
 
-    .gallery__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  /*-------2.7.3. Gallery Section----*/
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .card {
-        min-width: 100%;
-        max-width: 100%;
-    }
+  /*----------2.7.4. Contact Page----*/
+  .contact {
+    padding: 6rem 1rem;
+  }
 
-    .contact {
-        padding: 6rem 1rem;
-    }
+  .contact-info {
+    margin: 0 1rem 6rem 1rem;
+  }
 
-    .contact-info {
-        margin: 0 1rem 6rem 1rem;
-    }
+  .contact-info__grid {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .contact-info__grid {
-        display: flex;
-        flex-direction: column;
-    }
+  .contact-info__location {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    .contact-info__location {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .contact-address {
+    width: 100%;
+    height: 300px;
+  }
 
-    .contact-address {
-        width: 100%;
-        height: 300px;
-    }
+  .contact-map {
+    width: 100%;
+    height: 300px;
+  }
 
-    .contact-map {
-        width: 100%;
-        height: 300px;
-    }
+  .contact-info__hours {
+    width: 100%;
+    padding: 3rem 5rem;
+  }
 
-    .contact-info__hours {
-        width: 100%;
-        padding: 3rem 5rem;
-    }
+  /*------------2.7.5. About Page----*/
+  .about-video {
+    margin: 0 1rem 6rem 1rem;
+  }
 
-    .about-video {
-        margin: 0 1rem 6rem 1rem;
-    }
+  /*------------------2.7.6. Card----*/
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
-// Extra small devices (portrait phones, less than 576px)
+/*---------------2.8. Max Width: 575px----*/
 @media (max-width: 575px) {
-    h1 {
-        font-size: 3rem;
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .intro__text {
+    display: block;
+    text-align: justify;
+
+    & p {
+      padding: 0;
     }
 
-    h2 {
-        font-size: 2rem;
+    & p:last-of-type {
+      text-align: justify;
     }
+  }
 
-    h3 {
-        font-size: 1.5rem;
-    }
+  .features {
+    padding: 6rem 1rem;
+  }
 
-    .intro__text {
-        display: block;
-        text-align: justify;
+  .booking {
+    margin: 6rem 1rem;
+  }
 
-        & p {
-            padding: 0;
-        }
+  .booking-form {
+    padding: 6rem 1rem;
+  }
 
-        & p:last-of-type {
-            text-align: justify;
-        }
-    }
+  .menu {
+    padding: 6rem 1rem;
+  }
 
-    .features {
-        padding: 6rem 1rem;
-    }
+  .menu__list {
+    padding: 0;
+  }
 
-    .input-flex {
-        display: flex;
-        flex-direction: column;
-    }
+  .contact-info {
+    margin: 0 0 6rem 0;
+  }
 
-    .form-input {
-        width: 100%;
-    }
+  .contact-info__hours {
+    padding: 3rem 1rem;
+  }
 
-    .booking {
-        margin: 6rem 1rem;
-    }
+  .team__grid__one {
+    @include grid-template(1fr, auto);
+    margin-bottom: 2rem;
+  }
 
-    .booking-form {
-        padding: 6rem 1rem;
-    }
+  .team__grid__two {
+    @include grid-template(repeat(2, 1fr), auto);
+  }
 
-    .menu {
-        padding: 6rem 1rem;
-    }
+  .footer__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
 
-    .menu__list {
-        padding: 0;
-    }
+  .footer__grid__col1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 
-    .contact-info {
-        margin: 0 0 6rem 0;
-    }
+  .footer__grid__col2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 
-    .contact-info__hours {
-        padding: 3rem 1rem;
-    }
+  .footer__grid__col3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 
-    .team__grid__one {
-        @include grid-template(1fr, auto);
-        margin-bottom: 2rem;
-    }
+  .footer__grid__col4 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
 
-    .team__grid__two {
-        @include grid-template(repeat(2, 1fr), auto);
-    }
+  .input-flex {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .footer__grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-    }
-
-    .footer__grid__col1 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    .footer__grid__col2 {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    .footer__grid__col3 {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-
-    .footer__grid__col4 {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-    }
+  .form-input {
+    width: 100%;
+  }
 }
 
-/*-----------------------------------------Print----*/
+/*-------------------------3. Print Media Query ----*/
