@@ -25,6 +25,15 @@
         2.7.5. About Page
         2.7.6. Card
     2.8. Max Width: 575px
+      2.8.1. Headings
+      2.8.2. Intro Section
+      2.8.3. Menu Section
+      2.8.4. Features Section
+      2.8.5. Contact Page
+      2.8.6. About Page
+      2.8.7. Booking Page
+      2.8.8. Footer
+      2.8.9. Form
 3. Print Media Query 
 
 */
@@ -228,6 +237,7 @@
 
 /*---------------2.8. Max Width: 575px----*/
 @media (max-width: 575px) {
+  /*---------2.8.1. Headings----*/
   h1 {
     font-size: 3rem;
   }
@@ -240,6 +250,7 @@
     font-size: 1.5rem;
   }
 
+  /*----2.8.2. Intro Section----*/
   .intro__text {
     display: block;
     text-align: justify;
@@ -253,18 +264,7 @@
     }
   }
 
-  .features {
-    padding: 6rem 1rem;
-  }
-
-  .booking {
-    margin: 6rem 1rem;
-  }
-
-  .booking-form {
-    padding: 6rem 1rem;
-  }
-
+  /*-----2.8.3. Menu Section----*/
   .menu {
     padding: 6rem 1rem;
   }
@@ -273,6 +273,12 @@
     padding: 0;
   }
 
+  /*-2.8.4. Features Section----*/
+  .features {
+    padding: 6rem 1rem;
+  }
+
+  /*-2.8.5. Contact Page--------*/
   .contact-info {
     margin: 0 0 6rem 0;
   }
@@ -281,6 +287,7 @@
     padding: 3rem 1rem;
   }
 
+  /*-------2.8.6. About Page----*/
   .team__grid__one {
     @include grid-template(1fr, auto);
     margin-bottom: 2rem;
@@ -290,6 +297,16 @@
     @include grid-template(repeat(2, 1fr), auto);
   }
 
+  /*-----2.8.7. Booking Page----*/
+  .booking {
+    margin: 6rem 1rem;
+  }
+
+  .booking-form {
+    padding: 6rem 1rem;
+  }
+
+  /*-----------2.8.8. Footer----*/
   .footer__grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -315,6 +332,7 @@
     grid-row: 4 / 5;
   }
 
+  /*-------------2.8.9. Form----*/
   .input-flex {
     display: flex;
     flex-direction: column;

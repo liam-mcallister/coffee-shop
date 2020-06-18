@@ -391,7 +391,6 @@
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: -1;
 }
 
 .gallery-zoom {
@@ -428,9 +427,10 @@
   left: 100%;
   width: 100%;
   height: 100%;
+  padding: 1rem;
+  text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 1;
 }
 
 /*-------------------------4.7. Thanks----*/
@@ -918,7 +918,7 @@ p {
   font-weight: bold;
 }
 
-.footer-para {
+.para-mb {
   margin-bottom: 2rem;
 }
 
@@ -1336,6 +1336,15 @@ textarea:hover {
         2.7.5. About Page
         2.7.6. Card
     2.8. Max Width: 575px
+      2.8.1. Headings
+      2.8.2. Intro Section
+      2.8.3. Menu Section
+      2.8.4. Features Section
+      2.8.5. Contact Page
+      2.8.6. About Page
+      2.8.7. Booking Page
+      2.8.8. Footer
+      2.8.9. Form
 3. Print Media Query 
 
 */
@@ -1566,6 +1575,7 @@ textarea:hover {
 
 /*---------------2.8. Max Width: 575px----*/
 @media (max-width: 575px) {
+  /*---------2.8.1. Headings----*/
   h1, h2, h3 {
     font-size: 3rem;
   }
@@ -1575,6 +1585,7 @@ textarea:hover {
   h3 {
     font-size: 1.5rem;
   }
+  /*----2.8.2. Intro Section----*/
   .intro__text {
     display: block;
     text-align: justify;
@@ -1585,27 +1596,25 @@ textarea:hover {
   .intro__text p:last-of-type {
     text-align: justify;
   }
-  .features {
-    padding: 6rem 1rem;
-  }
-  .booking {
-    margin: 6rem 1rem;
-  }
-  .booking-form {
-    padding: 6rem 1rem;
-  }
+  /*-----2.8.3. Menu Section----*/
   .menu {
     padding: 6rem 1rem;
   }
   .menu__list {
     padding: 0;
   }
+  /*-2.8.4. Features Section----*/
+  .features {
+    padding: 6rem 1rem;
+  }
+  /*-2.8.5. Contact Page--------*/
   .contact-info {
     margin: 0 0 6rem 0;
   }
   .contact-info__hours {
     padding: 3rem 1rem;
   }
+  /*-------2.8.6. About Page----*/
   .team__grid__one {
     display: -ms-grid;
     display: grid;
@@ -1623,6 +1632,14 @@ textarea:hover {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
+  /*-----2.8.7. Booking Page----*/
+  .booking {
+    margin: 6rem 1rem;
+  }
+  .booking-form {
+    padding: 6rem 1rem;
+  }
+  /*-----------2.8.8. Footer----*/
   .footer__grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1661,6 +1678,7 @@ textarea:hover {
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
   }
+  /*-------------2.8.9. Form----*/
   .input-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1770,7 +1788,7 @@ body {
 
 /*----------------------------------5. Menu Page----*/
 .menu-hero {
-  background: url(/images/coffee3.jpg) center no-repeat;
+  background: url(/images/cafe/coffee3.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1779,7 +1797,7 @@ body {
 /*-------------------------------6. Contact Page----*/
 /*-------------------6.1. Contact Hero----*/
 .contact-hero {
-  background: url(/images/cafe.jpg) center no-repeat;
+  background: url(/images/cafe/cafe.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1798,7 +1816,7 @@ body {
 /*--------------------------------------7. About----*/
 /*---------------------7.1. About Hero----*/
 .about-hero {
-  background: url(/images/cafe2.jpg) center no-repeat;
+  background: url(/images/cafe/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1812,7 +1830,7 @@ body {
 /*-------------------------------8. Booking Page----*/
 /*-------------------8.1. Booking Hero----*/
 .booking-hero {
-  background: url(/images/barrista2.jpg) center no-repeat;
+  background: url(/images/cafe/barrista2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1826,7 +1844,7 @@ body {
 
 /*--------------------------9. Loyalty Card Page----*/
 .loyalty-hero {
-  background: url(/images/cafe2.jpg) center no-repeat;
+  background: url(/images/cafe/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;

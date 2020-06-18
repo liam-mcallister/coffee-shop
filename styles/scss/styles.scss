@@ -93,14 +93,14 @@ body {
 
 /*----------------------------------5. Menu Page----*/
 .menu-hero {
-  @include page-hero(url(/images/coffee3.jpg) center no-repeat);
+  @include page-hero(url(/images/cafe/coffee3.jpg) center no-repeat);
 }
 
 /*-------------------------------6. Contact Page----*/
 
 /*-------------------6.1. Contact Hero----*/
 .contact-hero {
-  @include page-hero(url(/images/cafe.jpg) center no-repeat);
+  @include page-hero(url(/images/cafe/cafe.jpg) center no-repeat);
 }
 
 /*-------------------6.2. Contact Info----*/
@@ -117,7 +117,7 @@ body {
 
 /*---------------------7.1. About Hero----*/
 .about-hero {
-  @include page-hero(url(/images/cafe2.jpg) center no-repeat);
+  @include page-hero(url(/images/cafe/cafe2.jpg) center no-repeat);
 }
 
 /*--------------------------7.2. About----*/
@@ -129,7 +129,7 @@ body {
 
 /*-------------------8.1. Booking Hero----*/
 .booking-hero {
-  @include page-hero(url(/images/barrista2.jpg) center no-repeat);
+  @include page-hero(url(/images/cafe/barrista2.jpg) center no-repeat);
 }
 
 /*-------------------8.2. Booking Form----*/
@@ -140,7 +140,7 @@ body {
 
 /*--------------------------9. Loyalty Card Page----*/
 .loyalty-hero {
-  @include page-hero(url(/images/cafe2.jpg) center no-repeat);
+  @include page-hero(url(/images/cafe/cafe2.jpg) center no-repeat);
 }
 
 /*------------------------------------10. Footer----*/
