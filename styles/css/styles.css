@@ -735,6 +735,31 @@
   -ms-grid-column: 1;
   grid-column: 1fr;
   grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding: 1rem 5rem;
+  height: 400px;
+}
+
+.loyalty-banner__text {
+  padding-right: 2rem;
+}
+
+.loyalty-card {
+  height: 80%;
+  width: auto;
 }
 
 /*------------------------------------10. Footer----*/
@@ -845,6 +870,47 @@ footer {
   height: 100vh;
   width: 100vw;
   padding: 1rem;
+}
+
+/*--------------------------------12. Quick Form----*/
+.quick-book {
+  width: 20rem;
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  border-radius: 1rem 1rem 0 0;
+  background: pink;
+}
+
+.quick-book__form {
+  display: none;
+  padding: 1rem;
+}
+
+.quick-book__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: #ff659d;
+}
+
+.quick-book__header h3 {
+  margin: 0;
+  color: white;
 }
 
 /*----------------------------------------------------
@@ -1243,7 +1309,7 @@ form {
 }
 
 .form-input {
-  width: 47.5%;
+  width: 100%;
   height: 3rem;
   padding: 0 1rem;
   margin-bottom: 2rem;
@@ -1277,17 +1343,30 @@ textarea {
   border: 1px solid #cacaca;
   border-radius: 0.3rem;
   background: #f7f7f7;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
 }
 
 textarea:focus {
   border: 1px solid #1A1A1C;
   background: white;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 textarea:hover {
   background: white;
+}
+
+label {
+  color: red;
+}
+
+input.error, textarea.error {
+  border: 1px solid red;
+}
+
+.quick-form-error {
+  margin-bottom: 0.5rem;
+  color: red;
 }
 
 /*--------------------------------------9. Video----*/
@@ -1336,15 +1415,15 @@ textarea:hover {
         2.7.5. About Page
         2.7.6. Card
     2.8. Max Width: 575px
-      2.8.1. Headings
-      2.8.2. Intro Section
-      2.8.3. Menu Section
-      2.8.4. Features Section
-      2.8.5. Contact Page
-      2.8.6. About Page
-      2.8.7. Booking Page
-      2.8.8. Footer
-      2.8.9. Form
+        2.8.1. Headings
+        2.8.2. Intro Section
+        2.8.3. Menu Section
+        2.8.4. Features Section
+        2.8.5. Contact Page
+        2.8.6. About Page
+        2.8.7. Booking Page
+        2.8.8. Footer
+        2.8.9. Form
 3. Print Media Query 
 
 */
@@ -1355,6 +1434,14 @@ textarea:hover {
   .grid-index {
     -ms-grid-rows: 60px auto;
         grid-template-rows: 60px auto;
+  }
+}
+
+/*---------------1.2. Max Height 550px----*/
+@media (max-height: 550px) {
+  /*-------1.2.1. Quick Book----*/
+  .quick-book {
+    display: none;
   }
 }
 
@@ -1691,6 +1778,10 @@ textarea:hover {
   .form-input {
     width: 100%;
   }
+  /*--------2.8.10. Quick Book----*/
+  .quick-book {
+    display: none;
+  }
 }
 
 /*-------------------------3. Print Media Query ----*/
@@ -1848,6 +1939,10 @@ body {
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
+}
+
+.loyalty-banner {
+  background: #7FD1B9;
 }
 
 /*------------------------------------10. Footer----*/

@@ -143,6 +143,10 @@ body {
   @include page-hero(url(/images/cafe/cafe2.jpg) center no-repeat);
 }
 
+.loyalty-banner{
+  background: $color4;
+}
+
 /*------------------------------------10. Footer----*/
 footer {
   background: url(/images/bg-dark.png);

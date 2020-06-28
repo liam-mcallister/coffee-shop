@@ -79,12 +79,10 @@
             <hr class="hr-md">
             <hr class="hr-sm">
             <div class="form-container">
-                <form class="contact-form" action="" method="post" novalidate>
-                    <div class="input-flex">
-                        <input class="form-input" type="text" placeholder="Name *" required="required">
-                        <input class="form-input" type="email" placeholder="Email *">
-                    </div>
-                    <textarea placeholder="Message *"></textarea>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <input class="form-input" type="text" name="contactName" placeholder="Name (Required)">
+                    <input class="form-input" type="email" name="contactEmail" placeholder="Email (Required)">
+                    <textarea name="contactMessage" placeholder="Message (Required)"></textarea>
                     <button class="btn" type="submit">Submit</button>
                 </form>
             </div>
@@ -96,7 +94,7 @@
             <div class="contact-info__grid">
                 <div class="contact-info__location">
                     <div class="contact-address">
-                        <img src="images/icons/sign.svg" class="icon-md contact-icon" alt="">
+                        <img src="images/icons/sign.svg" class="icon-md contact-icon" alt="Signpost icon">
                         <h3>Find Us</h3>
                         <p>Coffee Cafe, 123 Fake Street, Belfast, BT1 1AA</p>
                         <a class="contact-link" href="mailto:info@company.com">info@company.com</a>
@@ -205,27 +203,27 @@
                     <div class="instagram__grid">
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                     </div>
                     <a href="https://www.instagram.com/" target=”_blank”>View more photos</a>
@@ -237,18 +235,42 @@
         </div>
     </footer>
 
-
+    <div id="quick-book" class="quick-book">
+        <div id="quick-book__header" class="quick-book__header">
+            <h3>Quick Book</h3>
+        </div>
+        <div id="quick-book__form" class="quick-book__form">
+            <form novalidate>
+                <input class="form-input" type="text" placeholder="Name" />
+                <input class="form-input" type="tel" name="" id="" placeholder="Phone" />
+                <input class="form-input" type="date" name="" id="" placeholder="Date" />
+                <input class="form-input" type="time" name="" id="" placeholder="Time" />
+                <select class="form-input form-input--100" id="people" name="people">
+                    <option value="">Please choose the number of seats</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3UosdxBWX1stMvfPZrtrWGY6FEynE8is&callback=initMap">
-    </script>
-    <script src="scripts/app.js" async defer></script>
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+    <script src="scripts/app.js"></script>
     <script src="scripts/google-map.js"></script>
-    <script src="scripts/validator.js"></script>
+    <script src="scripts/validation.js"></script>
 </body>
 
 </html>

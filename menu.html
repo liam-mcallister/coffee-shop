@@ -482,27 +482,27 @@
                     <div class="instagram__grid">
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt=""></a>
+                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                     </div>
                     <a href="https://www.instagram.com/" target=”_blank”>View more photos</a>
@@ -514,13 +514,38 @@
         </div>
     </footer>
 
-
+    <div id="quick-book" class="quick-book">
+        <div id="quick-book__header" class="quick-book__header">
+            <h3>Quick Book</h3>
+        </div>
+        <div id="quick-book__form" class="quick-book__form">
+            <form novalidate>
+                <input class="form-input" type="text" placeholder="Name" />
+                <input class="form-input" type="tel" name="" id="" placeholder="Phone" />
+                <input class="form-input" type="date" name="" id="" placeholder="Date" />
+                <input class="form-input" type="time" name="" id="" placeholder="Time" />
+                <select class="form-input form-input--100" id="people" name="people">
+                    <option value="">Please choose the number of seats</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <script src="scripts/app.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/validation.js"></script>
 </body>
 
 </html>
