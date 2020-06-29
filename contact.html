@@ -42,7 +42,7 @@
 
 <body class="grid-contact">
 
-    <nav class="navbar">
+    <nav role="navigation" class="navbar">
         <input type="checkbox" name="burger-btn" class="burger-btn" id="burger-btn" />
         <label class="burger-btn-label" for="burger-btn">
             <span class="bar bar-top"></span>
@@ -69,11 +69,11 @@
         </ul>
     </nav>
 
-    <div class="contact-hero">
+    <div role="banner" class="contact-hero">
         <h1>Contact us</h1>
     </div>
 
-    <div class="contact">
+    <div role="main" class="contact">
         <div class="inner-md">
             <h2>Drop Us A Line</h2>
             <hr class="hr-md">
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="contact-info">
+    <div role="complementary" class="contact-info">
         <div class="inner-lg">
             <div class="contact-info__grid">
                 <div class="contact-info__location">
@@ -103,9 +103,8 @@
                     <div id="contact-map" class="contact-map"></div>
                 </div>
                 <div class="contact-info__hours">
-                    <h3>Opening Hours</h3>
-
-
+                    <div class="opening-hours">
+                        <h3>Opening Hours</h3>
                     <div class="card card--hours">
                         <div class="card__header">
                             <p>Mon</p>
@@ -155,14 +154,13 @@
                             <p>8am to 9pm</p>
                         </div>
                     </div>
-
-
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="inner-lg">
             <div class="footer__grid">
                 <div class="footer__grid__col1">
@@ -235,17 +233,27 @@
         </div>
     </footer>
 
-    <div id="quick-book" class="quick-book">
+    <div role="form" id="quick-book" class="quick-book">
         <div id="quick-book__header" class="quick-book__header">
             <h3>Quick Book</h3>
+            <img id="quick-book-arrow" class="icon-sm" src="images/icons/arrow.svg" alt="Arrow Icon">
         </div>
         <div id="quick-book__form" class="quick-book__form">
-            <form novalidate>
-                <input class="form-input" type="text" placeholder="Name" />
-                <input class="form-input" type="tel" name="" id="" placeholder="Phone" />
-                <input class="form-input" type="date" name="" id="" placeholder="Date" />
-                <input class="form-input" type="time" name="" id="" placeholder="Time" />
-                <select class="form-input form-input--100" id="people" name="people">
+            <form id="quick-form" novalidate>
+                <input id="quick-name" class="form-input" type="text" name="quickName" placeholder="Name" />
+                <input id="quick-phone" class="form-input" type="tel" name="quickPhone" placeholder="Phone" />
+                <input id="quick-date" class="form-input" type="date" name="quickDate" placeholder="Date" />
+                <select id="quick-time" class="form-input" name="quickTime">
+                    <option value="">Please choose a time</option>
+                    <option value="600">6:00pm</option>
+                    <option value="630">6:30pm</option>
+                    <option value="700">7:00pm</option>
+                    <option value="730">7:30pm</option>
+                    <option value="800">8:00pm</option>
+                    <option value="830">8:30pm</option>
+                    <option value="900">9:00pm</option>
+                </select>
+                <select id="quick-people" class="form-input" name="quickPeople">
                     <option value="">Please choose the number of seats</option>
                     <option value="one">1</option>
                     <option value="two">2</option>

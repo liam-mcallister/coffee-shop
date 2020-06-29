@@ -552,10 +552,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1rem;
 }
 
 .contact-address {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,8 +569,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  margin: 0 1rem 0 0;
+  padding: 1rem;
   text-align: center;
-  padding: 0 3rem;
+  border: 2px solid #1A1A1C;
 }
 
 .contact-map {
@@ -582,6 +585,10 @@
   grid-column: span 4;
   -ms-grid-row: 550;
   grid-row: 550px;
+  padding: 1rem;
+}
+
+.opening-hours {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +602,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 1rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid white;
 }
 
 /*---------------------------------7. About Page----*/
@@ -882,11 +892,6 @@ footer {
   background: pink;
 }
 
-.quick-book__form {
-  display: none;
-  padding: 1rem;
-}
-
 .quick-book__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,9 +900,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -911,6 +916,18 @@ footer {
 .quick-book__header h3 {
   margin: 0;
   color: white;
+}
+
+.quick-book__header img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.quick-book__form {
+  display: none;
+  padding: 1rem;
 }
 
 /*----------------------------------------------------
@@ -1154,6 +1171,15 @@ footer a {
   text-decoration: underline;
 }
 
+/*-----------------------4.4. 404 Link----*/
+.error-404 a {
+  color: #7FD1B9;
+}
+
+.error-404 a:hover {
+  color: #ff659d;
+}
+
 /*--------------------------------------5. Icons----*/
 /*-------------------5.1. Default Icon----*/
 .icon {
@@ -1164,6 +1190,12 @@ footer a {
 .icon:hover {
   -webkit-filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
           filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+}
+
+/*---------------------5.2. Small Icon----*/
+.icon-sm {
+  height: 30px;
+  width: 30px;
 }
 
 /*--------------------5.2. Medium Icon----*/
@@ -1285,6 +1317,7 @@ footer a {
 /*-------------7.3. Opening Hours Card----*/
 .card--hours {
   min-width: 100%;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -1357,16 +1390,12 @@ textarea:hover {
 }
 
 label {
-  color: red;
-}
-
-input.error, textarea.error {
-  border: 1px solid red;
-}
-
-.quick-form-error {
   margin-bottom: 0.5rem;
   color: red;
+}
+
+input.error, textarea.error, select.error {
+  border: 1px solid red;
 }
 
 /*--------------------------------------9. Video----*/
@@ -1438,7 +1467,7 @@ input.error, textarea.error {
 }
 
 /*---------------1.2. Max Height 550px----*/
-@media (max-height: 550px) {
+@media (max-height: 680px) {
   /*-------1.2.1. Quick Book----*/
   .quick-book {
     display: none;
@@ -1520,8 +1549,8 @@ input.error, textarea.error {
   .contact-info__grid {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: 550px auto;
-        grid-template-rows: 550px auto;
+    -ms-grid-rows: 550px 550px;
+        grid-template-rows: 550px 550px;
   }
   .contact-info__location {
     grid-column: span 12;
@@ -1640,14 +1669,17 @@ input.error, textarea.error {
   .contact-address {
     width: 100%;
     height: 300px;
+    margin: 1rem 0 0 0;
   }
   .contact-map {
     width: 100%;
     height: 300px;
   }
   .contact-info__hours {
-    width: 100%;
-    padding: 3rem 5rem;
+    padding: 1rem 1rem;
+  }
+  .opening-hours {
+    padding: 2.5rem 3rem;
   }
   /*------------2.7.5. About Page----*/
   .about-video {
@@ -1698,8 +1730,8 @@ input.error, textarea.error {
   .contact-info {
     margin: 0 0 6rem 0;
   }
-  .contact-info__hours {
-    padding: 3rem 1rem;
+  .opening-hours {
+    padding: 2.5rem 1rem;
   }
   /*-------2.8.6. About Page----*/
   .team__grid__one {
@@ -1895,7 +1927,7 @@ body {
 }
 
 /*-------------------6.2. Contact Info----*/
-.contact-address {
+.contact-info__location {
   background: #7FD1B9;
 }
 

@@ -243,6 +243,15 @@ footer a {
     }
 }
 
+/*-----------------------4.4. 404 Link----*/
+.error-404 a {
+    color: $color4;
+
+    &:hover {
+        color: $color6;
+    }
+}
+
 /*--------------------------------------5. Icons----*/
 
 /*-------------------5.1. Default Icon----*/
@@ -253,6 +262,12 @@ footer a {
     &:hover {
         filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
     }
+}
+
+/*---------------------5.2. Small Icon----*/
+.icon-sm {
+    height: 30px;
+    width: 30px;
 }
 
 /*--------------------5.2. Medium Icon----*/
@@ -358,6 +373,7 @@ footer a {
 /*-------------7.3. Opening Hours Card----*/
 .card--hours {
     min-width: 100%;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -418,6 +434,7 @@ textarea {
 }
 
 label {
+    margin-bottom: 0.5rem;
     color: red;
 }
 
@@ -429,9 +446,8 @@ textarea.error {
     @extend input.error;
 }
 
-.quick-form-error {
-    margin-bottom: 0.5rem;
-    color: red;
+select.error {
+    @extend input.error;
 }
 
 /*--------------------------------------9. Video----*/
