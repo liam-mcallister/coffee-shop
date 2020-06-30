@@ -34,437 +34,433 @@
 
 /*-----------------------------------1. Headings----*/
 h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 h2 {
-    @extend h1;
-    font-size: 2.5rem;
+  @extend h1;
+  font-size: 2.5rem;
 }
 
 h3 {
-    @extend h1;
-    font-size: 1.5rem;
+  @extend h1;
+  font-size: 1.5rem;
 }
 
 .sub-header {
-    font-family: "Great Vibes", cursive;
-    font-size: 15rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 15rem;
 }
 
 .header-pink {
-    color: $color6;
+  color: $color6;
 }
 
 /*---------------------------------2. Paragraphs----*/
 p {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .signature {
-    margin-top: 2rem;
-    font-family: "Great Vibes", cursive;
-    font-size: 3rem;
-    font-weight: bold;
+  margin-top: 2rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .para-mb {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*------------------------------------3. Buttons----*/
 
 /*-----------------3.1. Default Button----*/
 .btn {
-    display: inline-block;
-    border-radius: 3rem;
-    border: 2px solid $color6;
-    padding: 1rem;
-    cursor: pointer;
-    background: $color6;
+  display: inline-block;
+  border-radius: 3rem;
+  border: 2px solid $color6;
+  padding: 1rem;
+  cursor: pointer;
+  background: $color6;
+  color: $color1;
+  transition: all 0.5s;
+
+  & a {
+    color: white;
+  }
+
+  &:hover {
+    background: darken($color: $color6, $amount: 10%);
     color: $color1;
-    transition: all 0.5s;
-
-    & a {
-        color: white;
-    }
-
-    &:hover {
-        background: darken($color: $color6, $amount: 10%);
-        color: $color1;
-    }
+  }
 }
 
 /*-------------------3.2. Clear Button----*/
 .btn-clear {
-    @extend .btn;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    transition: all 0.5s;
+  @extend .btn;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  transition: all 0.5s;
 
-    &:hover {
-        border: 2px solid $color4;
-        background: $color4;
-        color: $color1;
-    }
+  &:hover {
+    border: 2px solid $color4;
+    background: $color4;
+    color: $color1;
+  }
 }
 
 /*------------------3.3. Burger Button----*/
 .burger-btn {
-    transform: scale(3);
-    opacity: 0;
-    margin: 0;
-    cursor: pointer;
-    position: fixed;
-    top: 24px;
-    left: 41px;
-    z-index: 97;
+  transform: scale(3);
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 24px;
+  left: 41px;
+  z-index: 97;
 }
 
 .burger-btn-label {
-    display: block;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 14px;
-    left: 32px;
-    z-index: 100;
-    border-radius: 3rem;
-    background: white;
-    transition: all 0.5s;
+  display: block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 14px;
+  left: 32px;
+  z-index: 100;
+  border-radius: 3rem;
+  background: white;
+  transition: all 0.5s;
 
-    &:hover {
-        background: $color4;
-    }
+  &:hover {
+    background: $color4;
+  }
 }
 
 .bar {
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 7px;
-    width: 16px;
-    height: 2.5px;
-    border-radius: 1rem;
-    background: $color1;
-    transition: all 0.2s;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 16px;
+  height: 2.5px;
+  border-radius: 1rem;
+  background: $color1;
+  transition: all 0.2s;
 }
 
 .bar-top {
-    @extend .bar;
+  @extend .bar;
 }
 
 .bar-middle {
-    @extend .bar;
-    top: 14.2px;
+  @extend .bar;
+  top: 14.2px;
 }
 
 .bar-bottom {
-    @extend .bar;
-    top: 20px;
+  @extend .bar;
+  top: 20px;
 }
 
 .burger-btn:checked ~ .burger-btn-label {
-    background: $color4;
+  background: $color4;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-top {
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 14px;
-    left: 6px;
-    width: 18px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 18px;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-middle {
-    transform: rotate(45deg);
-    position: absolute;
-    top: 14px;
-    left: 6px;
-    width: 18px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 18px;
 }
 
 .burger-btn:checked + .burger-btn-label .bar-bottom {
-    opacity: 0;
+  opacity: 0;
 }
 
 .burger-btn:checked + .burger-btn-label ~ .navbar-nav {
-    transform: translateX(300px);
+  transform: translateX(300px);
 }
 
 /*--------------------------------------4. Links----*/
 
 /*-------------------4.1. Default Link----*/
 a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    color: $color1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: $color1;
 
-    &:hover {
-        color: $color6;
-    }
+  &:hover {
+    color: $color6;
+  }
 }
 
 /*-------------------4.2. Contact Link----*/
 .contact-link {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /*--------------------4.3. Footer Link----*/
 footer a {
-    color: $color4;
+  color: $color4;
 }
 
 .footer-link {
-    display: block;
-    margin-bottom: 2rem;
+  display: block;
+  margin-bottom: 2rem;
 
-    &:last-of-type {
-        margin-bottom: 0;
-    }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .footer-blog-link {
-    text-transform: none;
-    font-weight: normal;
-    color: white;
+  text-transform: none;
+  font-weight: normal;
+  color: white;
 
-    &:hover {
-        color: white;
-        text-decoration: underline;
-    }
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 /*-----------------------4.4. 404 Link----*/
 .error-404 a {
-    color: $color4;
+  color: $color4;
 
-    &:hover {
-        color: $color6;
-    }
+  &:hover {
+    color: $color6;
+  }
 }
 
 /*--------------------------------------5. Icons----*/
 
 /*-------------------5.1. Default Icon----*/
 .icon {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 
-    &:hover {
-        filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
-    }
+  &:hover {
+    filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+  }
 }
 
 /*---------------------5.2. Small Icon----*/
 .icon-sm {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 /*--------------------5.2. Medium Icon----*/
 .icon-md {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 /*---------------------5.3. Large Icon----*/
 .icon-lg {
-    height: 70px;
-    width: 70px;
+  height: 70px;
+  width: 70px;
 }
 
 /*-------------------5.4. Feature Icon----*/
 .feature-icon {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*-------------------5.5. Contact Icon----*/
 .contact-icon {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*----------------------------6. Horizontal Rule----*/
 
 /*----------------------6.1. Medium HR----*/
 .hr-md {
-    height: 3px;
-    width: 15rem;
-    margin: 2rem auto 0.5rem auto;
-    border: none;
-    background: $color6;
-    color: $color6;
-}
-
-.hr-md-left {
-    margin: 2rem 0 0.5rem 0;
+  height: 3px;
+  width: 15rem;
+  margin: 2rem auto 0.5rem auto;
+  border: none;
+  background: $color6;
+  color: $color6;
 }
 
 /*-----------------------6.2. Small HR----*/
 .hr-sm {
-    @extend .hr-md;
-    width: 10rem;
-    margin: 0 auto 2rem auto;
-}
-
-.hr-sm-left {
-    margin: 0 0 2rem 0;
+  @extend .hr-md;
+  width: 10rem;
+  margin: 0 auto 2rem auto;
 }
 
 /*--------------------------------------7. Cards----*/
 
 /*-------------------7.1. Default Card----*/
 .card {
-    min-width: 50%;
-    max-width: 50%;
-    padding: 0 1rem 1rem 1rem;
-    text-align: left;
+  min-width: 50%;
+  max-width: 50%;
+  padding: 0 1rem 1rem 1rem;
+  text-align: left;
 
-    &:last-of-type {
-        padding: 0 1rem 0 1rem;
-    }
+  &:last-of-type {
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 .card__header {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 
-    & p {
-        margin-bottom: 0.5rem;
-    }
+  & p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .card__header__dots {
-    flex: 1;
-    height: 17px;
-    border-bottom: 2px dotted $color1;
-    margin: 0 0.2rem;
+  flex: 1;
+  height: 17px;
+  border-bottom: 2px dotted $color1;
+  margin: 0 0.2rem;
 }
 
 .dots--white {
-    border-bottom: 2px dotted white;
+  border-bottom: 2px dotted white;
 }
 
 .card__info {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 
-    & p {
-        margin-bottom: 0;
-    }
+  & p {
+    margin-bottom: 0;
+  }
 }
 
 /*-------------------7.2. Feature Card----*/
 .features-card {
-    @include flex-layout(column, center, center);
-    height: 100%;
-    padding: 2rem;
-    box-shadow: inset 0 0 0 10px $color4;
+  @include flex-layout(column, center, center);
+  height: 100%;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 10px $color4;
 }
 
 /*-------------7.3. Opening Hours Card----*/
 .card--hours {
-    min-width: 100%;
-    width: 100%;
-    max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 /*--------------------------------------8. Form----*/
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-input {
-    width: 100%;
-    height: 3rem;
-    padding: 0 1rem;
-    margin-bottom: 2rem;
-    border: 1px solid #cacaca;
-    border-radius: 0.3rem;
-    background: #f7f7f7;
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
 
-    &:focus {
-        border: 1px solid $color1;
-        transition: all 0.5s ease-in;
-        background: white;
-    }
+  &:focus {
+    border: 1px solid $color1;
+    transition: all 0.5s ease-in;
+    background: white;
+  }
 
-    &:hover {
-        transition: all 0.5s ease-in;
-        background: white;
-    }
+  &:hover {
+    transition: all 0.5s ease-in;
+    background: white;
+  }
 }
 
 .form-input--100 {
-    width: 100%;
+  width: 100%;
 }
 
 textarea {
-    width: 100%;
-    height: 10rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border: 1px solid #cacaca;
-    border-radius: 0.3rem;
-    background: #f7f7f7;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
 
-    &:focus {
-        border: 1px solid $color1;
-        background: white;
-        transition: all 0.5s ease-in;
-    }
+  &:focus {
+    border: 1px solid $color1;
+    background: white;
+    transition: all 0.5s ease-in;
+  }
 
-    &:hover {
-        background: white;
-    }
+  &:hover {
+    background: white;
+  }
 }
 
 label {
-    margin-bottom: 0.5rem;
-    color: red;
+  margin-bottom: 0.5rem;
+  color: red;
 }
 
 input.error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 textarea.error {
-    @extend input.error;
+  @extend input.error;
 }
 
 select.error {
-    @extend input.error;
+  @extend input.error;
+}
+
+.parsley-errors-list {
+  color: red;
 }
 
 /*--------------------------------------9. Video----*/
 .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

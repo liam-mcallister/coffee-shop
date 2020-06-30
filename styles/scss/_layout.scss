@@ -184,6 +184,7 @@
   @include grid-cols-rows(1fr, auto);
   text-align: center;
   padding: 6rem 2rem;
+  overflow: hidden;
 }
 
 .features__top {
@@ -305,6 +306,7 @@
 .thanks {
   @include grid-cols-rows(1fr, auto);
   padding: 6rem 2rem;
+  overflow: hidden;
 }
 
 .thanks__info {
@@ -317,8 +319,12 @@
 
 .thanks__text {
   width: 50%;
-  text-align: left;
   padding-left: 2rem;
+  text-align: left;
+
+  & hr {
+    margin-left: 0;
+  }
 }
 
 /*----------------------------------5. Menu Page----*/

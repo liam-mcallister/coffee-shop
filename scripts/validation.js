@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // Quick Book Form Validation
+    // Quick Book Form Validation (Validate Plugin)
     $('#quick-form').validate({
         errorPlacement: function (error, element) {
             error.insertBefore(element);

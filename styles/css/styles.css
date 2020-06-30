@@ -284,6 +284,7 @@
   grid-row: auto;
   text-align: center;
   padding: 6rem 2rem;
+  overflow: hidden;
 }
 
 .features__top, .features__middle, .features__bottom {
@@ -439,6 +440,7 @@
   grid-column: 1fr;
   grid-row: auto;
   padding: 6rem 2rem;
+  overflow: hidden;
 }
 
 .thanks__info {
@@ -463,8 +465,12 @@
 
 .thanks__text {
   width: 50%;
-  text-align: left;
   padding-left: 2rem;
+  text-align: left;
+}
+
+.thanks__text hr {
+  margin-left: 0;
 }
 
 /*----------------------------------5. Menu Page----*/
@@ -1231,18 +1237,10 @@ footer a {
   color: #ff659d;
 }
 
-.hr-md-left {
-  margin: 2rem 0 0.5rem 0;
-}
-
 /*-----------------------6.2. Small HR----*/
 .hr-sm {
   width: 10rem;
   margin: 0 auto 2rem auto;
-}
-
-.hr-sm-left {
-  margin: 0 0 2rem 0;
 }
 
 /*--------------------------------------7. Cards----*/
@@ -1396,6 +1394,10 @@ label {
 
 input.error, textarea.error, select.error {
   border: 1px solid red;
+}
+
+.parsley-errors-list {
+  color: red;
 }
 
 /*--------------------------------------9. Video----*/
@@ -1631,6 +1633,9 @@ input.error, textarea.error, select.error {
     padding-top: 5rem;
     text-align: center;
     padding-left: 0;
+  }
+  .thanks__text hr {
+    margin-left: auto;
   }
   /*----------2.7.2. Menu Section----*/
   .menu__list {
