@@ -37,6 +37,7 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Karla:wght@400;700&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/aos.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
@@ -92,7 +93,7 @@
     <div role="complementary" class="contact-info">
         <div class="inner-lg">
             <div class="contact-info__grid">
-                <div class="contact-info__location">
+                <div data-aos="fade-right" data-aos-duration="1000" class="contact-info__location">
                     <div class="contact-address">
                         <img src="images/icons/sign.svg" class="icon-md contact-icon" alt="Signpost icon">
                         <h3>Find Us</h3>
@@ -102,7 +103,7 @@
                     </div>
                     <div id="contact-map" class="contact-map"></div>
                 </div>
-                <div class="contact-info__hours">
+                <div data-aos="fade-left" data-aos-duration="1000" class="contact-info__hours">
                     <div class="opening-hours">
                         <h3>Opening Hours</h3>
                         <div class="card card--hours">
@@ -274,6 +275,10 @@
     <script src="scripts/jquery.validate.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3UosdxBWX1stMvfPZrtrWGY6FEynE8is&callback=initMap">
+    </script>
+    <script src="scripts/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
     <script src="scripts/app.js"></script>

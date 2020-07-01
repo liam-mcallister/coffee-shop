@@ -36,8 +36,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Karla:wght@400;700&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/reset.css">
-    <link rel="stylesheet" href="styles/css/styles.css">
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/css/aos.css">
+        <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
 <body class="grid-about">
@@ -176,13 +177,14 @@
 
     <div role="note" class="about-video">
         <div class="inner-md">
-            <h2>Video</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000">Video</h2>
             <hr class="hr-md">
             <hr class="hr-sm">
-            <div class="embed-container">
+            <div data-aos="fade-up" data-aos-duration="1000" class="embed-container">
                 <iframe title="Youtube Video" src="https://www.youtube.com/embed/RFcuNI33Oq4?start=5" frameborder="0"
                     allow="accelerometer; encrypted-media; gyroscope" allowfullscreen></iframe>
             </div>
+            <a data-aos="fade-up" data-aos-duration="1000" href="menu.html" class="btn">Full Menu</a>
         </div>
     </div>
 
@@ -299,6 +301,10 @@
 
     <script src="scripts/jquery-v3.5.1.min.js"></script>
     <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="scripts/app.js"></script>
     <script src="scripts/validation.js"></script>

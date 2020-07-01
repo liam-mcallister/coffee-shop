@@ -164,7 +164,11 @@
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 /*-----------------4.4. Booking Banner----*/
@@ -361,6 +365,7 @@
 .contact-info {
   @include grid-cols-rows(1fr, auto);
   margin: 0 2rem 6rem 2rem;
+  overflow: hidden;
 }
 
 .contact-info__grid {

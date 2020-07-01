@@ -38,6 +38,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/css/reset.css">
     <link rel="stylesheet" href="styles/css/aos.css">
+    <link rel="stylesheet" href="styles/css/strip.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
@@ -235,46 +236,66 @@
     </div>
 
     <div role="complementary" aria-labelledby="comp-gallery" class="gallery">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="gallery__grid">
+        <div data-aos="fade-up" data-aos-duration="1000" class="gallery__grid">
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar">
+                <a href="images/cafe/cafe.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/coffee6.jpg" alt="A coffee machine">
+                <a href="images/cafe/coffee6.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/coffee6.jpg" alt="A coffee machine">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/barrista.jpg" alt="A barrista pouring a cup of coffee">
+                <a href="images/cafe/barrista.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/barrista.jpg" alt="A barrista pouring a cup of coffee">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/coffee1.jpg" alt="A table containing eight coffees">
+                <a href="images/cafe/coffee1.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/coffee1.jpg" alt="A table containing eight coffees">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/coffee2.jpg" alt="A waiter pouring a cup of coffee">
+                <a href="images/cafe/coffee2.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/coffee2.jpg" alt="A waiter pouring a cup of coffee">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/coffee3.jpg" alt="Three people cheering with coffee">
+                <a href="images/cafe/coffee3.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/coffee3.jpg" alt="Three people cheering with coffee">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/coffee4.jpg" alt="A coffee machine">
+                <a href="images/cafe/coffee4.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/coffee4.jpg" alt="A coffee machine">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/cafe2.jpg" alt="A photograph of the coffee bar">
+                <a href="images/cafe/cafe2.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/cafe2.jpg" alt="A photograph of the coffee bar">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/barrista2.jpg" alt="A barrista pouring a cup of coffee">
+                <a href="images/cafe/barrista2.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/barrista2.jpg" alt="A barrista pouring a cup of coffee">
+                </a>
             </div>
             <div class="gallery__item">
-                <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
-                <img class="gallery-img" src="/images/cafe/food2.jpg" alt="French toast">
+                <a href="images/cafe/food2.jpg" class="strip" data-strip-group="mygroup">
+                    <img class="gallery-zoom" src="/images/icons/zoom.svg" alt="Zoom icon">
+                    <img class="gallery-img" src="/images/cafe/food2.jpg" alt="French toast">
+                </a>
             </div>
         </div>
     </div>
@@ -410,6 +431,7 @@
 
     <script src="scripts/jquery-v3.5.1.min.js"></script>
     <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/strip.pkgd.min.js"></script>
     <script src="scripts/aos.js"></script>
     <script>
         AOS.init();

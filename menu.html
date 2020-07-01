@@ -37,6 +37,7 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Karla:wght@400;700&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/aos.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
@@ -75,10 +76,12 @@
 
     <div role="main" class="menu">
         <div class="inner-md">
-            <h2>Coffee</h2>
-            <hr class="hr-md">
-            <hr class="hr-sm">
-            <div class="menu__list">
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__header">
+                <h2>Coffee</h2>
+                <hr class="hr-md">
+                <hr class="hr-sm">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__list">
                 <div class="card">
                     <div class="card__header">
                         <p>Cappuccino</p>
@@ -147,10 +150,12 @@
                 </div>
             </div>
 
-            <h2>Tea</h2>
-            <hr class="hr-md">
-            <hr class="hr-sm">
-            <div class="menu__list">
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__header">
+                <h2>Tea</h2>
+                <hr class="hr-md">
+                <hr class="hr-sm">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__list">
                 <div class="card">
                     <div class="card__header">
                         <p>English Breakfast Tea</p>
@@ -220,10 +225,12 @@
                 </div>
             </div>
 
-            <h2>Breakfast</h2>
-            <hr class="hr-md">
-            <hr class="hr-sm">
-            <div class="menu__list">
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__header">
+                <h2>Breakfast</h2>
+                <hr class="hr-md">
+                <hr class="hr-sm">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__list">
                 <div class="card">
                     <div class="card__header">
                         <p>Cinnamon Swirl</p>
@@ -292,10 +299,12 @@
                 </div>
             </div>
 
-            <h2>Lunch</h2>
-            <hr class="hr-md">
-            <hr class="hr-sm">
-            <div class="menu__list">
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__header">
+                <h2>Lunch</h2>
+                <hr class="hr-md">
+                <hr class="hr-sm">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__list">
                 <div class="card">
                     <div class="card__header">
                         <p>Cheese Toastie</p>
@@ -364,10 +373,12 @@
                 </div>
             </div>
 
-            <h2>Bottled Drinks</h2>
-            <hr class="hr-md">
-            <hr class="hr-sm">
-            <div class="menu__list">
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__header">
+                <h2>Bottled Drinks</h2>
+                <hr class="hr-md">
+                <hr class="hr-sm">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="menu__list">
                 <div class="card">
                     <div class="card__header">
                         <p>ONE Water (Still)</p>
@@ -553,6 +564,10 @@
 
     <script src="scripts/jquery-v3.5.1.min.js"></script>
     <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="scripts/app.js"></script>
     <script src="scripts/validation.js"></script>

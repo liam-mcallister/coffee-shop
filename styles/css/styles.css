@@ -259,7 +259,11 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.menu__list:last-of-type {
+  margin-bottom: 0;
 }
 
 /*-----------------4.4. Booking Banner----*/
@@ -539,6 +543,7 @@
   grid-column: 1fr;
   grid-row: auto;
   margin: 0 2rem 6rem 2rem;
+  overflow: hidden;
 }
 
 .contact-info__grid {
@@ -1417,6 +1422,7 @@ input.error, textarea.error, select.error {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 2rem;
 }
 
 /*----------------------------------------------------
