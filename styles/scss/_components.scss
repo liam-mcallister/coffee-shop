@@ -85,6 +85,8 @@ p {
   border: 2px solid $color6;
   padding: 1rem;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
   background: $color6;
   color: $color1;
   transition: all 0.5s;
@@ -418,11 +420,11 @@ textarea {
 
 label {
   margin-bottom: 0.5rem;
-  color: red;
+  color: $color6;
 }
 
 input.error {
-  border: 1px solid red;
+  border: 1px solid $color6;
 }
 
 textarea.error {
@@ -434,12 +436,12 @@ select.error {
 }
 
 .parsley-error {
-  border: 1px solid red;
+  border: 1px solid $color6;
 }
 
 .parsley-errors-list {
   margin-bottom: 0.5rem;
-  color: red;
+  color: $color6;
 }
 
 /*--------------------------------------9. Video----*/
