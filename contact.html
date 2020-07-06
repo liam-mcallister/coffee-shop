@@ -80,10 +80,16 @@
             <hr class="hr-md">
             <hr class="hr-sm">
             <div class="form-container">
-                <form id="contact-form" class="contact-form" novalidate>
-                    <input class="form-input" type="text" name="contactName" placeholder="Name (Required)">
-                    <input class="form-input" type="email" name="contactEmail" placeholder="Email (Required)">
-                    <textarea name="contactMessage" placeholder="Message (Required)"></textarea>
+                <form id="contact-form" class="contact-form" action="" method="post" novalidate data-parsley-validate>
+                    <div id="name-error"></div>
+                    <input class="form-input" type="text" placeholder="Name (required)" required
+                        data-parsley-length="[3, 30]" data-parsley-errors-container="#name-error" />
+                    <div id="email-error"></div>
+                    <input class="form-input" type="email" name="" id="" placeholder="Email (required)" required
+                        data-parsley-errors-container="#email-error" />
+                    <div id="message-error"></div>
+                    <textarea name="contactMessage" placeholder="Message (Required)" required
+                        data-parsley-errors-container="#message-error"></textarea>
                     <button class="btn" type="submit">Submit</button>
                 </form>
             </div>
@@ -192,8 +198,9 @@
                 <div class="footer__grid__col3">
                     <h3 class="footer-header">Twitter</h3>
                     <div class="twitter-container">
-                        <a class="twitter-timeline" data-height="500"
+                        <a class="twitter-timeline" data-lang="en" data-height="500"
                             href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw"></a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                     <a href="https://twitter.com/explore" target=”_blank”>View all posts</a>
                 </div>
@@ -202,27 +209,27 @@
                     <div class="instagram__grid">
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                     </div>
                     <a href="https://www.instagram.com/" target=”_blank”>View more photos</a>
@@ -273,6 +280,7 @@
 
     <script src="scripts/jquery-v3.5.1.min.js"></script>
     <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/parsley.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3UosdxBWX1stMvfPZrtrWGY6FEynE8is&callback=initMap">
     </script>

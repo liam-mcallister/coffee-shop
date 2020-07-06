@@ -726,6 +726,7 @@
 
 .booking-form {
   padding: 6rem 4rem;
+  text-align: center;
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
 }
@@ -900,6 +901,7 @@ footer {
   bottom: 0;
   right: 3rem;
   border-radius: 1rem 1rem 0 0;
+  text-align: center;
   background: pink;
 }
 
@@ -1335,15 +1337,6 @@ form {
           flex-direction: column;
 }
 
-.input-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .form-input {
   width: 100%;
   height: 3rem;
@@ -1365,10 +1358,6 @@ form {
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   background: white;
-}
-
-.form-input--100 {
-  width: 100%;
 }
 
 textarea {
@@ -1401,7 +1390,12 @@ input.error, textarea.error, select.error {
   border: 1px solid red;
 }
 
+.parsley-error {
+  border: 1px solid red;
+}
+
 .parsley-errors-list {
+  margin-bottom: 0.5rem;
   color: red;
 }
 
@@ -1901,7 +1895,7 @@ body {
 .booking-banner {
   border: 1rem solid white;
   background: #1A1A1C;
-  background: url(/images/bg-dark.png);
+  background: url(../../images/bg-dark.png);
   color: white;
 }
 
@@ -1922,7 +1916,7 @@ body {
 
 /*----------------------------------5. Menu Page----*/
 .menu-hero {
-  background: url(/images/cafe/coffee3.jpg) center no-repeat;
+  background: url(../../images/cafe/coffee3.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1931,7 +1925,7 @@ body {
 /*-------------------------------6. Contact Page----*/
 /*-------------------6.1. Contact Hero----*/
 .contact-hero {
-  background: url(/images/cafe/cafe.jpg) center no-repeat;
+  background: url(../../images/cafe/cafe.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1943,14 +1937,14 @@ body {
 }
 
 .contact-info__hours {
-  background: url(/images/bg-dark.png);
+  background: url(../../images/bg-dark.png);
   color: white;
 }
 
 /*--------------------------------------7. About----*/
 /*---------------------7.1. About Hero----*/
 .about-hero {
-  background: url(/images/cafe/cafe2.jpg) center no-repeat;
+  background: url(../../images/cafe/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1964,7 +1958,7 @@ body {
 /*-------------------------------8. Booking Page----*/
 /*-------------------8.1. Booking Hero----*/
 .booking-hero {
-  background: url(/images/cafe/barrista2.jpg) center no-repeat;
+  background: url(../../images/cafe/barrista2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1978,7 +1972,7 @@ body {
 
 /*--------------------------9. Loyalty Card Page----*/
 .loyalty-hero {
-  background: url(/images/cafe/cafe2.jpg) center no-repeat;
+  background: url(../../images/cafe/cafe2.jpg) center no-repeat;
   background-size: cover;
   text-shadow: 6px 2px 2px black;
   color: white;
@@ -1990,7 +1984,7 @@ body {
 
 /*------------------------------------10. Footer----*/
 footer {
-  background: url(/images/bg-dark.png);
+  background: url(../../images/bg-dark.png);
   color: white;
 }
 
@@ -2005,7 +1999,7 @@ footer {
 
 /*----------------------------11. Error 404 Page----*/
 .error-404 {
-  background: url(/images/bg-dark.png);
+  background: url(../../images/bg-dark.png);
   color: white;
 }
 /*# sourceMappingURL=styles.css.map */

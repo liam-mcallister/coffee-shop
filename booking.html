@@ -36,8 +36,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Karla:wght@400;700&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="styles/css/reset.css">
-        <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
 <body class="grid-booking">
@@ -76,31 +76,34 @@
     <div role="main" class="booking">
         <div class="inner-md">
             <div class="booking-form">
-
-
-
-
                 <form action="" method="post" novalidate data-parsley-validate>
-                    <input class="form-input" type="text" placeholder="Name (required)" required />
-                    <div class="input-flex">
-                        <input class="form-input" type="email" name="" id="" placeholder="Email (required)" required />
-                        <input class="form-input" type="tel" name="" id="" placeholder="Phone (required)" required />
-                    </div>
-                    <div class="input-flex">
-                        <input class="form-input" type="date" name="" id="" required />
-                        <select class="form-input" name="" required>
-                            <option value="">Please choose a time</option>
-                            <option value="600">6:00pm</option>
-                            <option value="630">6:30pm</option>
-                            <option value="700">7:00pm</option>
-                            <option value="730">7:30pm</option>
-                            <option value="800">8:00pm</option>
-                            <option value="830">8:30pm</option>
-                            <option value="900">9:00pm</option>
-                        </select>
-                    </div>
-                    <select class="form-input" id="people" name="people" required>
-                        <option value="">Please choose the number of seats</option>
+                    <div id="name-error"></div>
+                    <input class="form-input" type="text" placeholder="Name (required)" required
+                        data-parsley-length="[3, 30]" data-parsley-errors-container="#name-error" />
+                    <div id="email-error"></div>
+                    <input class="form-input" type="email" name="" id="" placeholder="Email (required)" required
+                        data-parsley-errors-container="#email-error" />
+                    <div id="phone-error"></div>
+                    <input class="form-input" data-parsley-type="digits" name="" id="" placeholder="Phone (required)"
+                        data-parsley-length="[11, 13]" data-parsley-errors-container="#phone-error" required />
+                    <div id="date-error"></div>
+                    <input class="form-input" type="date" name="" id="" required
+                        data-parsley-errors-container="#date-error" />
+                    <div id="time-error"></div>
+                    <select class="form-input" name="" required data-parsley-errors-container="#time-error">
+                        <option value="">Choose a time (required)</option>
+                        <option value="600">6:00pm</option>
+                        <option value="630">6:30pm</option>
+                        <option value="700">7:00pm</option>
+                        <option value="730">7:30pm</option>
+                        <option value="800">8:00pm</option>
+                        <option value="830">8:30pm</option>
+                        <option value="900">9:00pm</option>
+                    </select>
+                    <div id="people-error"></div>
+                    <select class="form-input" id="people" name="people" required required
+                        data-parsley-errors-container="#people-error">
+                        <option value="">How many people? (required)</option>
                         <option value="one">1</option>
                         <option value="two">2</option>
                         <option value="three">3</option>
@@ -110,10 +113,6 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <button class="btn">Submit</button>
                 </form>
-
-
-
-
             </div>
         </div>
     </div>
@@ -149,8 +148,9 @@
                 <div class="footer__grid__col3">
                     <h3 class="footer-header">Twitter</h3>
                     <div class="twitter-container">
-                        <a class="twitter-timeline" data-height="500"
+                        <a class="twitter-timeline" data-lang="en" data-height="500"
                             href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw"></a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                     <a href="https://twitter.com/explore" target=”_blank”>View all posts</a>
                 </div>
@@ -159,27 +159,27 @@
                     <div class="instagram__grid">
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                         <div class="gallery__item">
                             <a href="https://www.instagram.com/" target="_blank"><img class="gallery-img"
-                                    src="/images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
+                                    src="images/cafe/cafe.jpg" alt="A photograph of the coffee bar"></a>
                         </div>
                     </div>
                     <a href="https://www.instagram.com/" target=”_blank”>View more photos</a>

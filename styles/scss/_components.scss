@@ -375,11 +375,6 @@ form {
   flex-direction: column;
 }
 
-.input-flex {
-  display: flex;
-  justify-content: space-between;
-}
-
 .form-input {
   width: 100%;
   height: 3rem;
@@ -399,10 +394,6 @@ form {
     transition: all 0.5s ease-in;
     background: white;
   }
-}
-
-.form-input--100 {
-  width: 100%;
 }
 
 textarea {
@@ -442,7 +433,12 @@ select.error {
   @extend input.error;
 }
 
+.parsley-error {
+  border: 1px solid red;
+}
+
 .parsley-errors-list {
+  margin-bottom: 0.5rem;
   color: red;
 }
 
