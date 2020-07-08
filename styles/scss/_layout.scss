@@ -482,20 +482,13 @@
 
 /*------------9.2. Loyalty Card Banner----*/
 .loyalty-banner {
-  @include grid-cols-rows(1fr, auto);
-  @include flex-layout(row, space-evenly, center);
-  margin: 1rem;
-  padding: 1rem 5rem;
-  height: 400px;
+  width: 100%;
+  margin: 2rem 0;
 }
 
-.loyalty-banner__text {
-  padding-right: 2rem;
-}
-
-.loyalty-card {
-  height: 80%;
-  width: auto;
+.loyalty-info {
+  padding: 2rem;
+  text-align: left;
 }
 
 /*------------------------------------10. Footer----*/
