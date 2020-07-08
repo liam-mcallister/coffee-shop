@@ -139,13 +139,7 @@ body {
 }
 
 /*--------------------------9. Loyalty Card Page----*/
-.loyalty-hero {
-  @include page-hero(url(../../images/cafe/cafe2.jpg) center no-repeat);
-}
 
-.loyalty-banner{
-  background: $color4;
-}
 
 /*------------------------------------10. Footer----*/
 footer {

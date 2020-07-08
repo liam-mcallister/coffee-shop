@@ -294,6 +294,12 @@ footer a {
   margin-bottom: 1rem;
 }
 
+/*---------------------5.6. Store Icon----*/
+.store-icon {
+  width: 10rem;
+  height: auto;
+}
+
 /*----------------------------6. Horizontal Rule----*/
 
 /*----------------------6.1. Medium HR----*/
@@ -323,7 +329,7 @@ footer a {
   text-align: left;
 
   &:last-of-type {
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem 2rem 1rem;
   }
 }
 

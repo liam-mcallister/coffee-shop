@@ -45,8 +45,7 @@
   8.1. Booking Hero
   8.2. Booking Form
 9. Loyalty Card Page
-  9.1. Loyalty Card Hero
-  9.2. Loyalty Card Banner
+  9.1. Loyalty Card Info
 10. Footer
   10.1. Footer Top
   10.2. Footer Bottom
@@ -104,8 +103,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 60px 400px auto;
-      grid-template-rows: 60px 400px auto;
+  -ms-grid-rows: 60px auto;
+      grid-template-rows: 60px auto;
 }
 
 /*-------------------------------------2. Inners----*/
@@ -725,6 +724,9 @@
 }
 
 .booking-form {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
   padding: 6rem 4rem;
   text-align: center;
   border-radius: 2rem;
@@ -733,35 +735,21 @@
 }
 
 /*--------------------------9. Loyalty Card Page----*/
-/*--------------9.1. Loyalty Card Hero----*/
-.loyalty-hero {
+/*------------9.1. Loyalty Card Info----*/
+.loyalty-info {
   -ms-grid-column: 1;
   grid-column: 1fr;
   grid-row: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: left;
 }
 
-/*------------9.2. Loyalty Card Banner----*/
 .loyalty-banner {
   width: 100%;
-  margin: 2rem 0;
+  height: auto;
 }
 
-.loyalty-info {
-  padding: 2rem;
-  text-align: left;
+.loyalty-info__text {
+  margin: 4rem 2rem;
 }
 
 /*------------------------------------10. Footer----*/
@@ -1218,6 +1206,12 @@ footer a {
   margin-bottom: 1rem;
 }
 
+/*---------------------5.6. Store Icon----*/
+.store-icon {
+  width: 10rem;
+  height: auto;
+}
+
 /*----------------------------6. Horizontal Rule----*/
 /*----------------------6.1. Medium HR----*/
 .hr-md, .hr-sm {
@@ -1245,7 +1239,7 @@ footer a {
 }
 
 .card:last-of-type {
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .card__header {
@@ -1445,7 +1439,7 @@ input.error, textarea.error, select.error {
 */
 /*--------------1. Screen Media Queries (Height)----*/
 /*---------------1.1. Max Height 660px----*/
-@media (max-height: 600px) {
+@media (max-height: 700px) {
   /*-------1.1.1. Index Grid----*/
   .grid-index {
     -ms-grid-rows: 60px auto;
@@ -1956,17 +1950,6 @@ body {
 }
 
 /*--------------------------9. Loyalty Card Page----*/
-.loyalty-hero {
-  background: url(../../images/cafe/cafe2.jpg) center no-repeat;
-  background-size: cover;
-  text-shadow: 6px 2px 2px black;
-  color: white;
-}
-
-.loyalty-banner {
-  background: #7fd1b9;
-}
-
 /*------------------------------------10. Footer----*/
 footer {
   background: url(../../images/bg-dark.png);

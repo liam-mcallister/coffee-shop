@@ -29,8 +29,7 @@
   8.1. Booking Hero
   8.2. Booking Form
 9. Loyalty Card Page
-  9.1. Loyalty Card Hero
-  9.2. Loyalty Card Banner
+  9.1. Loyalty Card Info
 10. Footer
   10.1. Footer Top
   10.2. Footer Bottom
@@ -60,7 +59,7 @@
 }
 
 .grid-loyalty {
-  @include grid-template(1fr, 60px 400px auto);
+  @include grid-template(1fr, 60px auto);
 }
 
 /*-------------------------------------2. Inners----*/
@@ -466,6 +465,7 @@
 }
 
 .booking-form {
+  @include grid-cols-rows(1fr, auto);
   padding: 6rem 4rem;
   text-align: center;
   border-radius: 2rem;
@@ -474,21 +474,19 @@
 
 /*--------------------------9. Loyalty Card Page----*/
 
-/*--------------9.1. Loyalty Card Hero----*/
-.loyalty-hero {
+/*------------9.1. Loyalty Card Info----*/
+.loyalty-info {
   @include grid-cols-rows(1fr, auto);
-  @include flex-layout(column, center, center);
+  text-align: left;
 }
 
-/*------------9.2. Loyalty Card Banner----*/
 .loyalty-banner {
   width: 100%;
-  margin: 2rem 0;
+  height: auto;
 }
 
-.loyalty-info {
-  padding: 2rem;
-  text-align: left;
+.loyalty-info__text {
+  margin: 4rem 2rem;
 }
 
 /*------------------------------------10. Footer----*/
