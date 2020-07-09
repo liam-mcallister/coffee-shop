@@ -58,8 +58,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 60px calc(100vh - 60px) auto;
-      grid-template-rows: 60px calc(100vh - 60px) auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 .grid-menu {
@@ -196,7 +196,7 @@
 .home-hero {
   -ms-grid-column: 1;
   grid-column: 1fr;
-  grid-row: calc(100vh - 60px);
+  grid-row: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +211,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .home-hero p {
@@ -1403,8 +1403,8 @@ input.error, textarea.error, select.error {
 ------------------------------------------------------
 
 1. Screen Media Queries (Height)
-    1.1. Max Height: 600px
-        1.1.1. Index Grid
+    1.1. Max Height: 680px
+        1.1.1. Quick Book
 2. Screen Media Queries (Width)
     2.1. Min Width: 576px
         2.1.1. Thanks Section
@@ -1438,18 +1438,9 @@ input.error, textarea.error, select.error {
 
 */
 /*--------------1. Screen Media Queries (Height)----*/
-/*---------------1.1. Max Height 660px----*/
-@media (max-height: 700px) {
-  /*-------1.1.1. Index Grid----*/
-  .grid-index {
-    -ms-grid-rows: 60px auto;
-        grid-template-rows: 60px auto;
-  }
-}
-
-/*---------------1.2. Max Height 550px----*/
-@media (max-height: 680px) {
-  /*-------1.2.1. Quick Book----*/
+/*---------------1.1. Max Height 680px----*/
+@media screen and (max-height: 680px) {
+  /*-------1.1.1. Quick Book----*/
   .quick-book {
     display: none;
   }
@@ -1457,7 +1448,7 @@ input.error, textarea.error, select.error {
 
 /*---------------2. Screen Media Queries (Width)----*/
 /*---------------2.1. Min Width: 576px----*/
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   /*--------2.1.1. Thanks Section----*/
   .thanks__img {
     padding: 0 5rem;
@@ -1465,7 +1456,7 @@ input.error, textarea.error, select.error {
 }
 
 /*---------------2.2. Min Width: 768px----*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /*--------2.2.1. Thanks Section----*/
   .thanks__img {
     padding: 0;
@@ -1473,7 +1464,7 @@ input.error, textarea.error, select.error {
 }
 
 /*---------------2.6. Max Width: 991px----*/
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /*----2.6.1. Features Section----*/
   .features__top, .features__middle, .features__bottom {
     grid-gap: 1rem 0;
@@ -1593,7 +1584,7 @@ input.error, textarea.error, select.error {
 }
 
 /*---------------2.7. Max Width: 767px----*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /*------2.7.1. Thanks Section----*/
   .thanks__info {
     display: -webkit-box;
@@ -1677,7 +1668,7 @@ input.error, textarea.error, select.error {
 }
 
 /*---------------2.8. Max Width: 575px----*/
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   /*---------2.8.1. Headings----*/
   h1, h2, h3 {
     font-size: 3rem;
@@ -1801,6 +1792,84 @@ input.error, textarea.error, select.error {
 }
 
 /*-------------------------3. Print Media Query ----*/
+@media print {
+  * {
+    color: #1A1A1C;
+    background: white;
+  }
+  [data-aos] {
+    display: block !important;
+    opacity: 1 !important;
+    -webkit-transform: translate(0) scale(1) !important;
+            transform: translate(0) scale(1) !important;
+  }
+  p {
+    text-align: left;
+  }
+  .features__top, .features__middle, .features__bottom,
+  .features__middle,
+  .features__bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 0;
+  }
+  .contact-info__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-info__location,
+  .contact-info__hours {
+    width: 50%;
+  }
+  .contact-map {
+    display: none;
+  }
+  .team__grid__two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery__item::before {
+    display: none;
+  }
+  .gallery-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    left: 0px;
+    height: 20rem;
+  }
+  .gallery,
+  .menu-hero,
+  .contact-hero,
+  .contact,
+  .about-hero,
+  .about-video,
+  .booking-hero,
+  .quick-book,
+  nav,
+  footer,
+  img,
+  a,
+  hr, .btn, .btn-clear {
+    display: none;
+  }
+}
+
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
@@ -1857,16 +1926,12 @@ body {
 /*----------------------------------4. Home Page----*/
 /*----------------------4.1. Home Hero----*/
 .home-hero {
-  -webkit-box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
-          box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
   background: #1A1A1C;
   color: white;
 }
 
 /*----------------------4.2. Home Menu----*/
 .home-menu {
-  -webkit-box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
-          box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.88);
   background: #7fd1b9;
 }
 

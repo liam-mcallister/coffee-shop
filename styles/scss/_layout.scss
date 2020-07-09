@@ -39,7 +39,7 @@
 
 /*--------------------------------1. Page Bodies----*/
 .grid-index {
-  @include grid-template(1fr, 60px calc(100vh - 60px) auto);
+  @include grid-template(1fr, auto);
 }
 
 .grid-menu {
@@ -122,10 +122,10 @@
 
 /*----------------------4.1. Home Hero----*/
 .home-hero {
-  @include grid-cols-rows(1fr, calc(100vh - 60px));
+  @include grid-cols-rows(1fr, auto);
   @include flex-layout(column, center, center);
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
 
   & p {
     margin-bottom: 2rem;
