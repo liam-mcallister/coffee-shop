@@ -1,0 +1,2044 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Grid Mixins
+    1.1. Grid Template
+    1.2. Grid Columns / Rows
+2. Flex Mixin
+3. Hero Mixin
+
+*/
+/*--------------------------------1. Grid Mixins----*/
+/*------------------1.1. Grid Template----*/
+/*------------1.2. Grid Columns / Rows----*/
+/*---------------------------------2. Flex Mixin----*/
+/*---------------------------------3. Hero Mixin----*/
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Page Bodies
+2. Inners
+3. Navigation
+4. Home Page
+  4.1. Home Hero
+  4.2. Intro
+  4.3. Home Menu
+  4.4. Booking Banner
+  4.5. Features
+  4.6. Gallery
+  4.7. Thanks
+5. Menu Page
+  5.1. Menu Hero
+  5.2. Menu
+6. Contact Page
+  6.1. Contact Hero
+  6.2. Contact Form
+  6.3. Contact Info
+7. About Page
+  7.1. About Hero
+  7.2. About
+  7.3. About Team
+  7.4. About Video
+8. Booking Page
+  8.1. Booking Hero
+  8.2. Booking Form
+9. Loyalty Card Page
+  9.1. Loyalty Card Info
+10. Footer
+  10.1. Footer Top
+  10.2. Footer Bottom
+11. Error 404 Page
+
+*/
+/*--------------------------------1. Page Bodies----*/
+.grid-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.grid-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0px 400px auto;
+      grid-template-rows: 0px 400px auto;
+}
+
+.grid-contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0px 400px auto;
+      grid-template-rows: 0px 400px auto;
+}
+
+.grid-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0px 400px auto;
+      grid-template-rows: 0px 400px auto;
+}
+
+.grid-booking {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0px 400px auto;
+      grid-template-rows: 0px 400px auto;
+}
+
+.grid-loyalty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0px auto;
+      grid-template-rows: 0px auto;
+}
+
+/*-------------------------------------2. Inners----*/
+.inner-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.inner-md {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*---------------------------------3. Navigation----*/
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0px;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  z-index: 99;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.nav-item, .nav-link {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.nav-item:last-of-type, .nav-link:last-of-type {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar-buttons {
+  margin: 1rem 2rem;
+}
+
+.navbar-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-icons li {
+  margin-left: 1rem;
+}
+
+/*----------------------------------4. Home Page----*/
+/*----------------------4.1. Home Hero----*/
+.home-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.home-hero p {
+  margin-bottom: 2rem;
+}
+
+/*--------------------------4.2. Intro----*/
+.intro {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.intro__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
+.intro__text p {
+  margin: 0 0 2rem 0;
+  padding: 0 1rem;
+}
+
+.intro__text p:last-of-type {
+  text-align: left;
+}
+
+/*----------------------4.3. Home Menu----*/
+.home-menu {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.menu__list:last-of-type {
+  margin-bottom: 0;
+}
+
+/*-----------------4.4. Booking Banner----*/
+.booking-banner {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  text-align: center;
+  padding: 6rem 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.booking-banner h2 {
+  margin-top: 1rem;
+}
+
+/*-----------------------4.5. Features----*/
+.features {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  text-align: center;
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+.features__top, .features__middle, .features__bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 0 1rem;
+  margin-bottom: 4rem;
+}
+
+.features__top__left, .features__bottom__left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.features__top__right, .features__bottom__right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+.features__middle {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.features__middle__left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.features__middle__right {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+.features__bottom {
+  margin-bottom: 0;
+}
+
+.features-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------4.6. Gallery----*/
+.gallery {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+}
+
+.gallery__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 0 10px;
+}
+
+.gallery__item {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery__item:hover .gallery-img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.gallery__item:hover .gallery-zoom {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.gallery__item:hover .gallery-caption {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.gallery__item::before {
+  content: "";
+  padding-bottom: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery-zoom {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5rem;
+  opacity: 0;
+  z-index: 1;
+}
+
+.gallery-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*-------------------------4.7. Thanks----*/
+.thanks {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+.thanks__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanks__img {
+  width: 50%;
+}
+
+.thanks__text {
+  width: 50%;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.thanks__text hr {
+  margin-left: 0;
+}
+
+/*----------------------------------5. Menu Page----*/
+/*----------------------5.1. Menu Hero----*/
+.menu-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*---------------------------5.2. Menu----*/
+.menu {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+/*-------------------------------6. Contact Page----*/
+/*-------------------6.1. Contact Hero----*/
+.contact-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*-------------------6.2. Contact Form----*/
+.contact {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+/*-------------------6.3. Contact Info----*/
+.contact-info {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  margin: 0 2rem 6rem 2rem;
+  overflow: hidden;
+}
+
+.contact-info__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 550px;
+      grid-template-rows: 550px;
+  grid-gap: 2rem;
+}
+
+.contact-info__location {
+  grid-column: span 8;
+  -ms-grid-row: 550;
+  grid-row: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.contact-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0 1rem 0 0;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid #1A1A1C;
+}
+
+.contact-map {
+  width: 50%;
+  height: 100%;
+}
+
+.contact-info__hours {
+  grid-column: span 4;
+  -ms-grid-row: 550;
+  grid-row: 550px;
+  padding: 1rem;
+}
+
+.opening-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid white;
+}
+
+/*---------------------------------7. About Page----*/
+/*---------------------7.1. About Hero----*/
+.about-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*--------------------------7.2. About----*/
+.about {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+/*---------------------7.3. About Team----*/
+.about-team {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  padding: 6rem 0;
+}
+
+.team__header {
+  text-align: center;
+}
+
+.owner-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__grid__one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin-bottom: 2rem;
+}
+
+.team__grid__two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+/*--------------------7.4. About Video----*/
+.about-video {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  margin: 0 2rem 6rem 2rem;
+  text-align: center;
+}
+
+/*-------------------------------8. Booking Page----*/
+/*--------------------8.1 Booking Hero----*/
+.booking-hero {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*--------------------8.2 Booking Form----*/
+.booking {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  margin: 6rem 2rem;
+}
+
+.booking-form {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  padding: 6rem 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+}
+
+/*--------------------------9. Loyalty Card Page----*/
+/*------------9.1. Loyalty Card Info----*/
+.loyalty-info {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  text-align: left;
+}
+
+.loyalty-banner {
+  width: 100%;
+  height: auto;
+}
+
+.loyalty-info__text {
+  margin: 4rem 2rem;
+}
+
+/*------------------------------------10. Footer----*/
+footer {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+}
+
+/*--------------------10.1. Footer Top----*/
+.footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 0 2rem;
+  padding: 6rem 2rem;
+}
+
+.footer__grid__col1 {
+  grid-column: 0.5;
+  grid-row: auto;
+}
+
+.footer__grid__col2 {
+  grid-column: 0.66667;
+  grid-row: auto;
+}
+
+.footer__grid__col3 {
+  grid-column: 0.75;
+  grid-row: auto;
+}
+
+.footer__grid__col4 {
+  grid-column: 0.8;
+  grid-row: auto;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footer-icons a {
+  margin-right: 1rem;
+}
+
+.twitter-container {
+  margin-bottom: 2rem;
+}
+
+.instagram__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 10px;
+  margin-bottom: 2rem;
+}
+
+/*-----------------10.2. Footer Bottom----*/
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.footer__bottom p {
+  margin: 0;
+}
+
+/*----------------------------11. Error 404 Page----*/
+.error-404 {
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+
+/*--------------------------------12. Quick Form----*/
+.quick-book {
+  width: 20rem;
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  border-radius: 1rem 1rem 0 0;
+  text-align: center;
+  z-index: 2;
+  background: white;
+}
+
+.quick-book__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.85rem 0.85rem 0 0;
+  background: #ff659d;
+}
+
+.quick-book__header h3 {
+  margin: 0;
+  color: white;
+}
+
+.quick-book__header img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.quick-book__form {
+  display: none;
+  padding: 1rem;
+}
+
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Headings
+2. Paragraphs
+3. Buttons
+  3.1. Default Button
+  3.2. Clear Button
+  3.3. Burger Button
+4. Links
+  4.1. Default Link
+  4.2. Contact Link
+  4.3. Footer Link
+5. Icons
+  5.1. Default Icon
+  5.2. Medium Icon
+  5.3. Large Icon
+  5.4. Feature Icon
+  5.5. Contact Icon
+6. Horizontal Rule
+  6.1. Medium HR
+  6.2. Small HR
+7. Cards
+  7.1. Default Card
+  7.2. Feature Card
+  7.3. Opening Hours Card
+8. Form
+9. Video
+
+
+
+*/
+/*-----------------------------------1. Headings----*/
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.sub-header {
+  font-family: "Great Vibes", cursive;
+  font-size: 15rem;
+}
+
+.header-pink {
+  color: #ff659d;
+}
+
+/*---------------------------------2. Paragraphs----*/
+p {
+  line-height: 1.5rem;
+}
+
+.signature {
+  margin-top: 2rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.para-mb {
+  margin-bottom: 2rem;
+}
+
+/*------------------------------------3. Buttons----*/
+/*-----------------3.1. Default Button----*/
+.btn, .btn-clear {
+  display: inline-block;
+  border-radius: 3rem;
+  border: 2px solid #ff659d;
+  padding: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #ff659d;
+  color: #1A1A1C;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn a, .btn-clear a {
+  color: white;
+}
+
+.btn:hover, .btn-clear:hover {
+  background: #ff327d;
+  color: #1A1A1C;
+}
+
+/*-------------------3.2. Clear Button----*/
+.btn-clear {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-clear:hover {
+  border: 2px solid #7fd1b9;
+  background: #7fd1b9;
+  color: #1A1A1C;
+}
+
+/*------------------3.3. Burger Button----*/
+.burger-btn {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 24px;
+  left: 41px;
+  z-index: 97;
+}
+
+.burger-btn-label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 14px;
+  left: 32px;
+  z-index: 100;
+  border-radius: 3rem;
+  background: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.burger-btn-label:hover {
+  background: #7fd1b9;
+}
+
+.bar, .bar-top, .bar-middle, .bar-bottom {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 16px;
+  height: 2.5px;
+  border-radius: 1rem;
+  background: #1A1A1C;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bar-middle {
+  top: 14.2px;
+}
+
+.bar-bottom {
+  top: 20px;
+}
+
+.burger-btn:checked ~ .burger-btn-label {
+  background: #7fd1b9;
+}
+
+.burger-btn:checked + .burger-btn-label .bar-top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 18px;
+}
+
+.burger-btn:checked + .burger-btn-label .bar-middle {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 18px;
+}
+
+.burger-btn:checked + .burger-btn-label .bar-bottom {
+  opacity: 0;
+}
+
+.burger-btn:checked + .burger-btn-label ~ .navbar-nav {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+
+/*--------------------------------------4. Links----*/
+/*-------------------4.1. Default Link----*/
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1A1A1C;
+}
+
+a:hover {
+  color: #ff659d;
+}
+
+/*-------------------4.2. Contact Link----*/
+.contact-link {
+  margin-top: 1rem;
+}
+
+/*--------------------4.3. Footer Link----*/
+footer a {
+  color: #7fd1b9;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.footer-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-blog-link {
+  text-transform: none;
+  font-weight: normal;
+  color: white;
+}
+
+.footer-blog-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*-----------------------4.4. 404 Link----*/
+.error-404 a {
+  color: #7fd1b9;
+}
+
+.error-404 a:hover {
+  color: #ff659d;
+}
+
+/*--------------------------------------5. Icons----*/
+/*-------------------5.1. Default Icon----*/
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.icon:hover {
+  -webkit-filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+          filter: invert(0.5) sepia(1) saturate(8) hue-rotate(302deg);
+}
+
+/*---------------------5.2. Small Icon----*/
+.icon-sm {
+  height: 30px;
+  width: 30px;
+}
+
+/*--------------------5.2. Medium Icon----*/
+.icon-md {
+  height: 50px;
+  width: 50px;
+}
+
+/*---------------------5.3. Large Icon----*/
+.icon-lg {
+  height: 70px;
+  width: 70px;
+}
+
+/*-------------------5.4. Feature Icon----*/
+.feature-icon {
+  margin-bottom: 1rem;
+}
+
+/*-------------------5.5. Contact Icon----*/
+.contact-icon {
+  margin-bottom: 1rem;
+}
+
+/*---------------------5.6. Store Icon----*/
+.store-icon {
+  width: 10rem;
+  height: auto;
+}
+
+/*----------------------------6. Horizontal Rule----*/
+/*----------------------6.1. Medium HR----*/
+.hr-md, .hr-sm {
+  height: 3px;
+  width: 15rem;
+  margin: 2rem auto 0.5rem auto;
+  border: none;
+  background: #ff659d;
+  color: #ff659d;
+}
+
+/*-----------------------6.2. Small HR----*/
+.hr-sm {
+  width: 10rem;
+  margin: 0 auto 2rem auto;
+}
+
+/*--------------------------------------7. Cards----*/
+/*-------------------7.1. Default Card----*/
+.card {
+  min-width: 50%;
+  max-width: 50%;
+  padding: 0 1rem 1rem 1rem;
+  text-align: left;
+}
+
+.card:last-of-type {
+  padding: 0 1rem 2rem 1rem;
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+.card__header p {
+  margin-bottom: 0.5rem;
+}
+
+.card__header__dots {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 17px;
+  border-bottom: 2px dotted #1A1A1C;
+  margin: 0 0.2rem;
+}
+
+.dots--white {
+  border-bottom: 2px dotted white;
+}
+
+.card__info {
+  font-size: 0.8rem;
+}
+
+.card__info p {
+  margin-bottom: 0;
+}
+
+/*-------------------7.2. Feature Card----*/
+.features-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 2rem;
+  -webkit-box-shadow: inset 0 0 0 10px #7fd1b9;
+          box-shadow: inset 0 0 0 10px #7fd1b9;
+}
+
+/*-------------7.3. Opening Hours Card----*/
+.card--hours {
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*--------------------------------------8. Form----*/
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-input {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+}
+
+.form-input:focus {
+  border: 1px solid #1A1A1C;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  background: white;
+}
+
+.form-input:hover {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  background: white;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+}
+
+textarea:focus {
+  border: 1px solid #1A1A1C;
+  background: white;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+textarea:hover {
+  background: white;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #ff659d;
+}
+
+input.error, textarea.error, select.error {
+  border: 1px solid #ff659d;
+}
+
+.parsley-error {
+  border: 1px solid #ff659d;
+}
+
+.parsley-errors-list {
+  margin-bottom: 0.5rem;
+  color: #ff659d;
+}
+
+/*--------------------------------------9. Video----*/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.bgvid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  z-index: -9999;
+}
+
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Screen Media Queries (Height)
+    1.1. Max Height: 680px
+        1.1.1. Quick Book
+    1.2. Min Height: 600px
+        1.2.1. Home Hero
+2. Screen Media Queries (Width)
+    2.1. Min Width: 576px
+        2.1.1. Thanks Section
+    2.2. Min Width: 768px
+        2.2.1. Thanks Section
+    2.3. Min Width: 992px
+    2.4. Min Width: 1200px
+    2.5. Max Width: 1199px
+    2.6. Max Width: 991px
+        2.6.1. Features Section
+        2.6.2. Contact Page
+        2.6.3. Footer
+    2.7. Max Width: 767px
+        2.7.1. Thanks Section
+        2.7.2. Menu Section
+        2.7.3. Gallery Section
+        2.7.4. Contact Page
+        2.7.5. About Page
+        2.7.6. Card
+    2.8. Max Width: 575px
+        2.8.1. Headings
+        2.8.2. Intro Section
+        2.8.3. Menu Section
+        2.8.4. Features Section
+        2.8.5. Contact Page
+        2.8.6. About Page
+        2.8.7. Booking Page
+        2.8.8. Footer
+        2.8.9. Form
+3. Print Media Query 
+
+*/
+/*--------------1. Screen Media Queries (Height)----*/
+/*---------------1.1. Max Height 680px----*/
+@media screen and (max-height: 680px) {
+  /*-------1.1.1. Quick Book----*/
+  .quick-book {
+    display: none;
+  }
+}
+
+/*---------------1.2. Min Height 600px----*/
+@media screen and (min-height: 600px) {
+  /*-------1.2.1. Home Hero----*/
+  .home-hero {
+    height: 100vh;
+  }
+}
+
+/*---------------2. Screen Media Queries (Width)----*/
+/*---------------2.1. Min Width: 576px----*/
+@media screen and (min-width: 576px) {
+  /*--------2.1.1. Thanks Section----*/
+  .thanks__img {
+    padding: 0 5rem;
+  }
+}
+
+/*---------------2.2. Min Width: 768px----*/
+@media screen and (min-width: 768px) {
+  /*--------2.2.1. Thanks Section----*/
+  .thanks__img {
+    padding: 0;
+  }
+}
+
+/*---------------2.6. Max Width: 991px----*/
+@media screen and (max-width: 991px) {
+  /*----2.6.1. Features Section----*/
+  .features__top, .features__middle, .features__bottom {
+    grid-gap: 1rem 0;
+  }
+  .features__top__left, .features__bottom__left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .features__top__right, .features__bottom__right {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .features__middle__left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .features__middle__right {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .features__bottom__left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .features__bottom__right {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  /*----------2.6.2. Contact Page----*/
+  .contact-info__grid {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 550px 550px;
+        grid-template-rows: 550px 550px;
+  }
+  .contact-info__location {
+    grid-column: span 12;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-info__hours {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4 / 10;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  /*----------------2.6.3. Footer----*/
+  .footer__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    grid-gap: 6rem;
+  }
+  .footer__grid__col1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .footer__grid__col2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .footer__grid__col3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .footer__grid__col4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+}
+
+/*---------------2.7. Max Width: 767px----*/
+@media screen and (max-width: 767px) {
+  /*------2.7.1. Thanks Section----*/
+  .thanks__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thanks__img {
+    width: 100%;
+  }
+  .thanks__text {
+    width: 100%;
+    padding-top: 5rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .thanks__text hr {
+    margin-left: auto;
+  }
+  /*----------2.7.2. Menu Section----*/
+  .menu__list {
+    padding: 0 4rem;
+  }
+  /*-------2.7.3. Gallery Section----*/
+  .gallery__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  /*----------2.7.4. Contact Page----*/
+  .contact {
+    padding: 6rem 1rem;
+  }
+  .contact-info {
+    margin: 0 1rem 6rem 1rem;
+  }
+  .contact-info__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-address {
+    width: 100%;
+    height: 300px;
+    margin: 1rem 0 0 0;
+  }
+  .contact-map {
+    width: 100%;
+    height: 300px;
+  }
+  .contact-info__hours {
+    padding: 1rem 1rem;
+  }
+  .opening-hours {
+    padding: 2.5rem 3rem;
+  }
+  /*------------2.7.5. About Page----*/
+  .about-video {
+    margin: 0 1rem 6rem 1rem;
+  }
+  /*------------------2.7.6. Card----*/
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+/*---------------2.8. Max Width: 575px----*/
+@media screen and (max-width: 575px) {
+  /*---------2.8.1. Headings----*/
+  h1, h2, h3 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  /*----2.8.2. Intro Section----*/
+  .intro__text {
+    display: block;
+    text-align: justify;
+  }
+  .intro__text p {
+    padding: 0;
+  }
+  .intro__text p:last-of-type {
+    text-align: justify;
+  }
+  /*-----2.8.3. Menu Section----*/
+  .menu {
+    padding: 6rem 1rem;
+  }
+  .menu__list {
+    padding: 0;
+  }
+  /*-2.8.4. Features Section----*/
+  .features {
+    padding: 6rem 1rem;
+  }
+  /*-2.8.5. Contact Page--------*/
+  .contact-info {
+    margin: 0 0 6rem 0;
+  }
+  .opening-hours {
+    padding: 2.5rem 1rem;
+  }
+  /*-------2.8.6. About Page----*/
+  .team__grid__one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin-bottom: 2rem;
+  }
+  .team__grid__two {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  /*-----2.8.7. Booking Page----*/
+  .booking {
+    margin: 6rem 1rem;
+  }
+  .booking-form {
+    padding: 6rem 1rem;
+  }
+  /*-----------2.8.8. Footer----*/
+  .footer__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+  }
+  .footer__grid__col1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .footer__grid__col2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .footer__grid__col3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  .footer__grid__col4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+  }
+  /*-------------2.8.9. Form----*/
+  .input-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-input {
+    width: 100%;
+  }
+  /*--------2.8.10. Quick Book----*/
+  .quick-book {
+    display: none;
+  }
+}
+
+/*-------------------------3. Print Media Query ----*/
+@media print {
+  * {
+    color: #1A1A1C;
+    background: white;
+  }
+  [data-aos] {
+    display: block !important;
+    opacity: 1 !important;
+    -webkit-transform: translate(0) scale(1) !important;
+            transform: translate(0) scale(1) !important;
+  }
+  p {
+    text-align: left;
+  }
+  .features__top, .features__middle, .features__bottom,
+  .features__middle,
+  .features__bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 0;
+  }
+  .contact-info__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-info__location,
+  .contact-info__hours {
+    width: 50%;
+  }
+  .contact-map {
+    display: none;
+  }
+  .team__grid__two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery__item::before {
+    display: none;
+  }
+  .gallery-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    left: 0px;
+    height: 20rem;
+  }
+  .gallery,
+  .menu-hero,
+  .contact-hero,
+  .contact,
+  .about-hero,
+  .about-video,
+  .booking-hero,
+  .quick-book,
+  nav,
+  footer,
+  img,
+  a,
+  hr, .btn, .btn-clear {
+    display: none;
+  }
+}
+
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Universal
+2. Body
+3. Navigation
+4. Home Page
+  4.1. Home Hero
+  4.2. Home Menu
+  4.3. Booking Banner
+  4.4. Gallery
+5. Menu Page
+6. Contact Page
+  6.1. Contact Hero
+  6.2. Contact Info
+7. About Page
+  7.1. About Hero
+  7.2. About
+8. Booking Page
+  8.1. Booking Hero
+  8.2. Booking Form
+9. Loyalty Card Page
+10. Footer
+  10.1. Footer Bottom
+11. Error 404 Page
+
+*/
+/*----------------------------------1. Universal----*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*---------------------------------------2. Body----*/
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background: white;
+  color: #1A1A1C;
+}
+
+/*---------------------------------3. Navigation----*/
+.navbar {
+  background: #1A1A1C;
+}
+
+.navbar-nav {
+  background: white;
+}
+
+/*----------------------------------4. Home Page----*/
+/*----------------------4.1. Home Hero----*/
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.603);
+}
+
+/*----------------------4.1. Home Hero----*/
+.home-hero {
+  color: white;
+}
+
+/*----------------------4.2. Home Menu----*/
+.home-menu {
+  background: #7fd1b9;
+}
+
+/*-----------------4.3. Booking Banner----*/
+.booking-banner {
+  border: 1rem solid white;
+  background: #1A1A1C;
+  background: url(../../../images/bg-dark.png);
+  color: white;
+}
+
+.booking-banner:hover {
+  border: 1rem solid #ff659d;
+  color: #ff659d;
+}
+
+/*------------------------4.4. Gallery----*/
+.gallery-zoom {
+  background: black;
+}
+
+.gallery-caption {
+  background: rgba(27, 27, 27, 0.692);
+  color: white;
+}
+
+/*----------------------------------5. Menu Page----*/
+.menu-hero {
+  background: url(../../../images/cafe/coffee3.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: white;
+}
+
+/*-------------------------------6. Contact Page----*/
+/*-------------------6.1. Contact Hero----*/
+.contact-hero {
+  background: url(../../../images/cafe/cafe.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: white;
+}
+
+/*-------------------6.2. Contact Info----*/
+.contact-info__location {
+  background: #7fd1b9;
+}
+
+.contact-info__hours {
+  background: url(../../../images/bg-dark.png);
+  color: white;
+}
+
+/*--------------------------------------7. About----*/
+/*---------------------7.1. About Hero----*/
+.about-hero {
+  background: url(../../../images/cafe/cafe2.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: white;
+}
+
+/*--------------------------7.2. About----*/
+.about {
+  background: #7fd1b9;
+}
+
+/*-------------------------------8. Booking Page----*/
+/*-------------------8.1. Booking Hero----*/
+.booking-hero {
+  background: url(../../../images/cafe/barrista2.jpg) center no-repeat;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: white;
+}
+
+/*-------------------8.2. Booking Form----*/
+.booking-form {
+  border: 4px solid #ff659d;
+  background: white;
+}
+
+/*--------------------------9. Loyalty Card Page----*/
+/*------------------------------------10. Footer----*/
+footer {
+  background: url(../../../images/bg-dark.png);
+  color: white;
+}
+
+/*-----------------10.1. Footer Bottom----*/
+.footer__bottom {
+  background: rgba(0, 0, 0, 0.603);
+}
+
+.footer__bottom span {
+  color: #ff659d;
+}
+
+/*----------------------------11. Error 404 Page----*/
+.error-404 {
+  background: url(../../../images/bg-dark.png);
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

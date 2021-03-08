@@ -1,0 +1,42 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Grid Mixins
+    1.1. Grid Template
+    1.2. Grid Columns / Rows
+2. Flex Mixin
+3. Hero Mixin
+
+*/
+
+/*--------------------------------1. Grid Mixins----*/
+
+/*------------------1.1. Grid Template----*/
+@mixin grid-template($temp-cols, $temp-rows) {
+  display: grid;
+  grid-template-columns: $temp-cols;
+  grid-template-rows: $temp-rows;
+}
+
+/*------------1.2. Grid Columns / Rows----*/
+@mixin grid-cols-rows($cols, $rows) {
+  grid-column: $cols;
+  grid-row: $rows;
+}
+
+/*---------------------------------2. Flex Mixin----*/
+@mixin flex-layout($dire, $just, $alig) {
+  display: flex;
+  flex-direction: $dire;
+  justify-content: $just;
+  align-items: $alig;
+}
+
+/*---------------------------------3. Hero Mixin----*/
+@mixin page-hero($bg-image) {
+  background: $bg-image;
+  background-size: cover;
+  text-shadow: 6px 2px 2px black;
+  color: white;
+}
