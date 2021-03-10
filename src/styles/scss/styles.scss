@@ -79,7 +79,7 @@ body {
 .booking-banner {
     border: 1rem solid white;
     background: $color1;
-    background: url(../../../images/bg-dark.png);
+    background: url(../../images/bg-dark.png);
     color: white;
 
     &:hover {
@@ -100,14 +100,14 @@ body {
 
 /*----------------------------------5. Menu Page----*/
 .menu-hero {
-    @include page-hero(url(../../../images/cafe/coffee3.jpg) center no-repeat);
+    @include page-hero(url(../../images/cafe/coffee3.jpg) center no-repeat);
 }
 
 /*-------------------------------6. Contact Page----*/
 
 /*-------------------6.1. Contact Hero----*/
 .contact-hero {
-    @include page-hero(url(../../../images/cafe/cafe.jpg) center no-repeat);
+    @include page-hero(url(../../images/cafe/cafe.jpg) center no-repeat);
 }
 
 /*-------------------6.2. Contact Info----*/
@@ -116,7 +116,7 @@ body {
 }
 
 .contact-info__hours {
-    background: url(../../../images/bg-dark.png);
+    background: url(../../images/bg-dark.png);
     color: white;
 }
 
@@ -124,7 +124,7 @@ body {
 
 /*---------------------7.1. About Hero----*/
 .about-hero {
-    @include page-hero(url(../../../images/cafe/cafe2.jpg) center no-repeat);
+    @include page-hero(url(../../images/cafe/cafe2.jpg) center no-repeat);
 }
 
 /*--------------------------7.2. About----*/
@@ -137,7 +137,7 @@ body {
 /*-------------------8.1. Booking Hero----*/
 .booking-hero {
     @include page-hero(
-        url(../../../images/cafe/barrista2.jpg) center no-repeat
+        url(../../images/cafe/barrista2.jpg) center no-repeat
     );
 }
 
@@ -151,7 +151,7 @@ body {
 
 /*------------------------------------10. Footer----*/
 footer {
-    background: url(../../../images/bg-dark.png);
+    background: url(../../images/bg-dark.png);
     color: white;
 }
 
@@ -166,6 +166,6 @@ footer {
 
 /*----------------------------11. Error 404 Page----*/
 .error-404 {
-    background: url(../../../images/bg-dark.png);
+    background: url(../../images/bg-dark.png);
     color: white;
 }
