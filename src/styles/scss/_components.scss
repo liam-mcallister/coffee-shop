@@ -451,21 +451,17 @@ select.error {
 }
 
 /*--------------------------------------9. Video----*/
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
+.about-video__container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+
+  & video {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 2rem;
-}
 
 .bgvid {
   position: absolute;
