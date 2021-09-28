@@ -18,6 +18,8 @@ As every great cafe/restaurant website has a gallery, finding a lightbox plugin 
 
 There are two contact forms on this website, the quick book form (slides up from the bottom of every page) and the form on the contact page. For the quick book form, I went with the jQuery validation plugin from the Bel-Cab Tours website but for the contact page form I wanted to try a different plugin. For this I used Parsley.js which I ended up preferring in the end as it is a much simpler solution as you only need to add some custom attributes for it to work.
 
+![Coffee Screenshot](https://user-images.githubusercontent.com/49287478/135090460-06bd6fd1-5ca9-4554-b826-dfcf690688d8.png)
+
 ## 2. Tech
 
 This website uses the following technologies:
