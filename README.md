@@ -25,7 +25,7 @@ This website uses the following technologies:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup language for web pages
 - [SCSS](https://sass-lang.com/) - CSS preprocessor
 - [jQuery](https://jquery.com/) - Feature-rich JavaScript library
-- [Animate On Scroll](https://michalsnik.github.io/aos/) - Library that allows you to animate elements as you scroll down, and up
+- [Animate On Scroll](https://michalsnik.github.io/aos/) - Library that animates elements as you scroll down, and up
 - [jQuery Validation Plugin](https://jqueryvalidation.org/) - jQuery plugin for client-side form validation
 - [Parsley.js](https://parsleyjs.org/) - jQuery plugin for client-side form validation
 - [Strip.js](https://stripjs.com/) - Responsive lightbox that slides out from the edge of your screen
